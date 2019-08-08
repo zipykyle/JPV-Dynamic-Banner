@@ -1,0 +1,17 @@
+projectname: jpv-dynamic-banner-sizes
+projectPrettyName: JPV Dynamic Banners
+platform: Sizmek
+sizes:
+  160x600:
+    link: https://google.com/
+  300x250:
+    link: https://google.com/
+  728x90:
+    link: https://google.com/
+  300x600:
+    link: https://google.com/
+  320x50:
+    link: https://google.com/
+  120x600:
+    link: https://google.com/
+
