@@ -1,9 +1,10 @@
 {
   "name": "jpv-dynamic-banner-sizes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "WZ Banner Generator  of multiple sizes",
   "main": "webpack.dev.js",
   "scripts": {
+    "prebuild": "webpack-dev-server --hot --inline --config webpack.prebuild.js",
     "dev": "webpack-dev-server --hot --inline --config webpack.dev.js",
     "bump": "npm --no-git-tag-version version patch ",
     "zip": "node zip.pack.js",
