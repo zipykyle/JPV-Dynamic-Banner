@@ -1,0 +1,73 @@
+
+
+/* Global Frame Setup
+--------------------------------------------------------------------------- */
+
+.fr {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	&-f1, &-f2, &-f3, &-f4 {
+		overflow: hidden;
+		&-lines {
+			@extend %wh100;
+			position: absolute;
+			display: block;
+			color: $acc3-color;
+			top: 0;
+			&-l1, &-l2, &-l3{
+				@extend %center;
+				position: absolute;
+			}
+		}
+		&-terms{
+			display: block;
+			font-size: 10px;
+			color: $acc3-color;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			align-items: center;
+			height: 20px;
+			text-align: center;
+		}
+	}
+}
+
+.wz-banner {
+	display: block;
+	position: relative;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+
+.fr-logo {
+	display: block;
+	width: 100%;
+	position: absolute;
+	background: no-repeat url("~@images/jpv-logo.svg") center center;
+	height: 55px;
+	top: 15px;
+	background-size: contain;
+}
+
+.cta-btn {
+	background-color: $acc2-color;
+	color: $acc3-color;
+	font-size: 22px;
+	width: 100%;
+	max-width: 180px;
+	position: absolute;
+	display: block;
+
+	border-radius: 50px;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-align: center;
+	@extend %center;
+	bottom: 20px ;
+}

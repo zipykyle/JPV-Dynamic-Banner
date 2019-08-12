@@ -1,7 +1,37 @@
-body {
-	background: brown
-}
+@import "@project/styles/global.scss";
 
-::placeholder {
-	color: gray;
+$fr1line1Top:100px;
+$fr1line2Top:180px;
+$fr1line3Top:350px;
+
+
+.fr-f1 {
+	&-bg {
+
+		display: block;
+		position: absolute;
+		background-size:  600px 300px ;
+		top: 0;
+		left: 0;
+		z-index: 0;
+
+	}
+	&-lines {
+		&-l1{
+			z-index: 3;
+			top: $fr1line1Top;
+		}
+		&-l2{
+			z-index: 4;
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr1line2Top;
+		}
+		&-l3{
+			z-index: 5;
+			@extend %center;
+			top: $fr1line3Top;
+		}
+	}
+
 }

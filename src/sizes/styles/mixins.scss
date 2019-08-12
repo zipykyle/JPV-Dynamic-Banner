@@ -1,0 +1,16 @@
+@mixin opacityFix($opacityPercentage, $opacityPoint){
+/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity='" + $opacityPercentage + ")";
+
+/* IE 5-7 */
+	filter: alpha(opacity=$opacityPercentage);
+
+/* Netscape */
+	-moz-opacity: $opacityPoint;
+
+/* Safari 1.x */
+	-khtml-opacity: $opacityPoint;
+
+/* Good browsers */
+	opacity: $opacityPoint;
+}

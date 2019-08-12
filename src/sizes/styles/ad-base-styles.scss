@@ -1,0 +1,168 @@
+$displayBannerSizes: (
+				(160x600, 160px, 600px),
+				(300x600, 300px, 600px),
+				(500x90, 500px, 90px),
+				(728x90, 728px, 90px)
+);
+
+@each $label, $width, $height in $displayBannerSizes {
+	.dbs-#{$label} {
+		width: $width;
+		height: $height;
+	}
+}
+
+
+html, body {
+	background: rgb(0, 0, 0);
+	display: block;
+	height: 100%;
+	width: 100%;
+	font-family: $fontFam;
+	padding: 0;
+	margin: 0;
+}
+
+.txt-acc1 {color: $acc1-color;}
+.txt-acc2 {color: $acc2-color;}
+.txt-acc3 {color: $acc3-color;}
+
+.bold {
+	font-weight: bold;
+}
+
+.h1, .h2, .h3, .h4, .h5 {
+	display: block;
+}
+
+%wh100 {
+	height: 100%;
+	width: 100%;
+}
+
+%center {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.h1 {font-size: 40px;
+	line-height: 40px;
+}
+.h2 {font-size: 35px;
+	line-height: 35px;
+}
+.h3 {font-size: 30px;
+	line-height: 30px;
+}
+.h4 {font-size: 25px;
+	line-height: 25px;
+}
+.h5 {font-size: 15px;
+	line-height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Base Styles
+--------------------------------------------------------------------------- */
+#ad {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	margin: auto;
+	background: #000;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.btn-overlay {
+	display: block;
+	position: absolute;
+	z-index: 50;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: 99;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		top: 0;
+		border: 1px solid #666;
+	}
+}
+
+/* Replay Btn
+--------------------------------------------------------------------------- */
+.ad-overlay {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.replay-btn {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	height: 16px;
+	width: 16px;
+	z-index: 55;
+	cursor: pointer;
+	&:hover img {
+		-webkit-animation: rotate-animation 1s infinite linear;
+		animation: rotate-animation 1s infinite linear;
+	}
+}
+
+@-webkit-keyframes rotate-animation {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate-animation {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}

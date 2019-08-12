@@ -24,6 +24,7 @@ let getHTML = () => {
 	let html = [
 
 		new HtmlWebpackPlugin({
+
 			template: path.resolve( __dirname, `src/landing/index.hbs`),
 			chunks: [ 'landing' ],
 			hash: true,
@@ -46,6 +47,7 @@ let getHTML = () => {
 		t.inject = true;
 		t.alwaysWriteToDisk = true;
 		t.title = `${size}`;
+		t.bannerSizes = `${size}`;
 		t.filename = path.resolve( __dirname, `dist/${ size }/index.html`);
 
 		html.push(
