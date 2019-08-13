@@ -2,41 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06f9803f-2f88-47d3-b7d0-f8a5e2042b06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sizes/120x600/index.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/120x600/jpv-bg-120x600.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/120x600/jpv-char-120x600.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/120x600/screenshot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/120x600/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/120x600/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/160x600/jpv-bg-160x600.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/160x600/jpv-char-160x600.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/300x250/jpv-bg-250x300.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/300x250/jpv-char-250x300.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/300x250/screenshot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/300x250/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/300x250/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/300x600/jpv-bg-300x600.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/300x600/jpv-char-300x600.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/jpv-bg-350x50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/jpv-char-320x50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/screenshot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/728x90/jpv-bg-728x90.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/728x90/jpv-bg2-728x90.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/728x90/jpv-char-728x90.jpg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/landing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/landing/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectconfig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/projectconfig.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sizes/160x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/screenshot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/screenshot.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/jpv-bg-160x600.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/jpv-bg-160x600.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sizes/160x600/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sizes/160x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/screenshot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/screenshot.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/screenshot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/screenshot.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/styles/global-frame.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/styles/global-frame.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,87 +28,57 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projectconfig.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sizes/120x600/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="98" column="44" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sizes/160x600/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="1" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sizes/160x600/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="408">
+              <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
               <folding>
                 <element signature="e#109#537#0" />
+                <element signature="e#578#1508#0" />
+                <element signature="e#589#905#0" />
+                <element signature="e#912#1118#0" />
+                <element signature="e#1128#1321#0" />
+                <element signature="e#1333#1495#0" />
+                <element signature="e#1514#2562#0" />
+                <element signature="e#1524#1746#0" />
+                <element signature="e#1756#1918#0" />
+                <element signature="e#2570#3050#0" />
+                <element signature="e#3253#3350#0" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sizes/styles/global.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sizes/styles/global-frame.scss">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+            <state relative-caret-position="236">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sizes/160x600/jpv-bg-160x600.jpg">
+        <entry file="file://$PROJECT_DIR$/src/sizes/160x600/jpv-char-160x600.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.dev.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sizes/160x600/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="447">
+              <caret line="188" column="15" selection-start-line="188" selection-start-column="15" selection-end-line="188" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sizes/120x600/index.hbs">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/sizes/160x600/index.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153">
+              <caret line="15" column="71" lean-forward="true" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -153,6 +96,7 @@
       <find>html</find>
       <find>generateHtmlFiles</find>
       <find>CreateFileWebpack</find>
+      <find>.cta-btn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,12 +116,13 @@
         <option value="$PROJECT_DIR$/webpack.test.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/webpack.step1.js" />
-        <option value="$PROJECT_DIR$/src/sizes/160x600/index.hbs" />
         <option value="$PROJECT_DIR$/projectconfig.yml" />
-        <option value="$PROJECT_DIR$/src/sizes/160x600/script.js" />
         <option value="$PROJECT_DIR$/src/sizes/120x600/script.js" />
-        <option value="$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss" />
+        <option value="$PROJECT_DIR$/src/sizes/styles/global-frame.scss" />
+        <option value="$PROJECT_DIR$/src/sizes/160x600/index.hbs" />
         <option value="$PROJECT_DIR$/src/sizes/160x600/style.scss" />
+        <option value="$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss" />
+        <option value="$PROJECT_DIR$/src/sizes/160x600/script.js" />
       </list>
     </option>
   </component>
@@ -234,20 +179,21 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sizes/160x600" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\160x600" />
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src" />
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes" />
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\320x50" />
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\300x600" />
-      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\300x250" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\160x600" />
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src" />
     </key>
   </component>
@@ -278,12 +224,12 @@
       <workItem from="1565626519273" duration="270000" />
       <workItem from="1565628945832" duration="325000" />
       <workItem from="1565686744174" duration="1352000" />
-      <workItem from="1565703929943" duration="1103000" />
+      <workItem from="1565703929943" duration="7279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25035000" />
+    <option name="totallyTimeSpent" value="31211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1424" extended-state="6" />
@@ -314,13 +260,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/webpack-dev-server/bin/webpack-dev-server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="91" column="54" selection-start-line="91" selection-start-column="54" selection-end-line="91" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sizes/300x600/script.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -414,13 +353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sizes/160x600/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/landing/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -455,22 +387,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sizes/160x600/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sizes/120x600/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="98" column="44" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="44" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sizes/160x600/jpv-bg-160x600.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sizes/styles/global.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -480,22 +402,56 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sizes/styles/global-frame.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        <state relative-caret-position="556">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sizes/160x600/jpv-bg-160x600.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sizes/160x600/jpv-char-160x600.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sizes/160x600/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state relative-caret-position="408">
+          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
           <folding>
             <element signature="e#109#537#0" />
+            <element signature="e#578#1508#0" />
+            <element signature="e#589#905#0" />
+            <element signature="e#912#1118#0" />
+            <element signature="e#1128#1321#0" />
+            <element signature="e#1333#1495#0" />
+            <element signature="e#1514#2562#0" />
+            <element signature="e#1524#1746#0" />
+            <element signature="e#1756#1918#0" />
+            <element signature="e#2570#3050#0" />
+            <element signature="e#3253#3350#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sizes/160x600/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="15" column="71" lean-forward="true" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sizes/160x600/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="188" column="15" selection-start-line="188" selection-start-column="15" selection-end-line="188" selection-end-column="15" />
         </state>
       </provider>
     </entry>

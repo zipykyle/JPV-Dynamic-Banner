@@ -123,7 +123,7 @@ var timeline = (function MasterTimeline() {
 				.from(fr02,0.0, {opacity:0,force3D:true}, 0.1)
 				.from(fr02Cube,frSD, {opacity:1, x:-555, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.3)
 				.from(fr02Bg,frSD, {opacity:0}, 0.4)
-				.from(fr02Toon,frSD, {opacity:0, x:-700, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.5)
+				.from(fr02Toon,frSD, {opacity:0,scale: 1.5, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.5)
 				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.6)
 				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.7)
 				.from(fr02Line3, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)},0.8)
@@ -135,7 +135,6 @@ var timeline = (function MasterTimeline() {
 			// Choose from 1200+ games
 			var tl = new TimelineMax();
 			tl
-				.to(fr02,0.0, {opacity:0,force3D:true}, 0.1)
 				.to(fr02Line1, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.0)
 				.to(fr02Line2, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.1)
 				.to(fr02Line3, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)},0.2)
@@ -156,12 +155,17 @@ var timeline = (function MasterTimeline() {
 				autoRound:false,
 			});
 			
+			var Cont={val:0} , NewVal = 100 ;
+			
 			var tl = new TimelineMax();
 			tl
 				.to(fr03,0.0, {opacity:0,force3D:true}, 0.1)
 				.from(fr04,1.0, {opacity:0,force3D:true}, 0.5)
 				.from(fr04Bg, frSD, {opacity:0}, 0.5)
 				.from(fr04Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.5)
+				.to(Cont,1,{val:1000000,roundProps:"val",onUpdate:function(){
+						fr04Line2.innerHTML=Cont.val
+					}})
 				.from(fr04Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.5)
 				.from(fr04Line3, frSD, {opacity:0, y: 20, ease:Elastic.easeOut.config(2, 1)},  0.5)
 				.from(fr04Cta, frSD, {scale:0.1 ,opacity:0 , ease:Elastic.easeOut.config(1, 0.3)},  0.5)
@@ -169,6 +173,8 @@ var timeline = (function MasterTimeline() {
 				.to(fr04Line2, frSOD, {opacity:0}, 2.0)
 				.to(fr04Line3, frSOD, {opacity:0}, 2.0);
 			return tl;
+			
+			
 		}
 		
 		tl
@@ -178,9 +184,9 @@ var timeline = (function MasterTimeline() {
 			.add(sceneFour(), 'frame4+=1.5');
 		
 		// DEBUG:
-		// tl.play('frame3'); // start playing at label:frame3
+		// tl.play('frame2+=0'); // start playing at label:frame3
 		// tl.pause('frame1=1.0'); // pause the timeline at label:frame3
-		// tl.pause('frame1=1.2'); // pause the timeline at label:frame3
+		tl.play('frame2=1.0'); // pause the timeline at label:frame3
 	}
 	
 	function updateStart() {
