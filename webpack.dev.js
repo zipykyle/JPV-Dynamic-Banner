@@ -47,6 +47,7 @@ let getHTML = () => {
 		t.inject = true;
 		t.alwaysWriteToDisk = true;
 		t.title = `${size}`;
+		t.bannerSizes = `${size}`;
 		t.filename = path.resolve( __dirname, `dist/${ size }/index.html`);
 
 		html.push(

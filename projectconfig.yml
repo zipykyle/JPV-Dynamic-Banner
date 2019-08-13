@@ -1,5 +1,5 @@
-projectname: jpv-dynamic-banner-sizes
-projectPrettyName: JPV Dynamic Banners
+projectname: jackpotvillage
+projectPrettyName: JPV - Retargeting
 platform: Sizmek
 sizes:
   160x600:
@@ -7,11 +7,10 @@ sizes:
   300x250:
     link: https://google.com/
   728x90:
-    link: https://google.com/
+    link:
   300x600:
-    link: https://google.com/
+    link:
   320x50:
-    link: https://google.com/
+    link:
   120x600:
-    link: https://google.com/
-
+    link:

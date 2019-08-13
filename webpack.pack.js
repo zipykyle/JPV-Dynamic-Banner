@@ -19,6 +19,8 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const imageminMozjpeg = require('imagemin-mozjpeg');
+const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
+
 
 let getAlias = ()=> {
 
@@ -149,37 +151,37 @@ let Exports = [
 
 		plugins: [
 
-		new CleanWebpackPlugin( path.resolve( __dirname, 'dist' ) ),
-
-		new HtmlWebpackPlugin({
-
-			template: path.resolve( __dirname, `src/landing/index.hbs`),
-			hash: true,
-			inject: true,
-			alwaysWriteToDisk: true,
-			minify: { collapseWhitespace: true },
-			title: projectData.projectname,
-			data: projectData,
-			filename: path.resolve( __dirname, `dist/landing/index.html`)
-
-		}),
-
-		new HtmlWebpackHarddiskPlugin(),
-
-		new MiniCssExtractPlugin({
-			filename: "style.css"
-		}),
-
-		new CopyWebpackPlugin( [
-			{
-				from: path.resolve( __dirname, 'src/index.html'),
-				to: path.resolve( __dirname, `dist/index.html`)
-			},
-			{
-				from: path.resolve( __dirname, 'src/_redirects' ),
-				to: path.resolve( __dirname, 'dist/[name]' )
-			}
-		] )
+			new CleanWebpackPlugin( path.resolve( __dirname, 'dist' ) ),
+	
+			new HtmlWebpackPlugin({
+	
+				template: path.resolve( __dirname, `src/landing/index.hbs`),
+				hash: true,
+				inject: true,
+				alwaysWriteToDisk: true,
+				minify: { collapseWhitespace: true },
+				title: projectData.projectname,
+				data: projectData,
+				filename: path.resolve( __dirname, `dist/landing/index.html`)
+	
+			}),
+	
+			new HtmlWebpackHarddiskPlugin(),
+	
+			new MiniCssExtractPlugin({
+				filename: "style.css"
+			}),
+	
+			new CopyWebpackPlugin( [
+				{
+					from: path.resolve( __dirname, 'src/index.html'),
+					to: path.resolve( __dirname, `dist/index.html`)
+				},
+				{
+					from: path.resolve( __dirname, 'src/_redirects' ),
+					to: path.resolve( __dirname, 'dist/[name]' )
+				}
+			] )
 
 		],
 
@@ -221,6 +223,20 @@ Object.keys( projectData.sizes ).forEach( (size)=> {
 				from: path.resolve( __dirname, `src/sizes/${ size }/screenshot.+(png|jpg|jpeg)`),
 				to: path.resolve( __dirname, `dist/${ size }/screenshot.[ext]`)
 			} ] ),
+			
+			new HtmlWebpackExternalsPlugin({
+				externals: [
+					{
+						module: 'TweenMax',
+						entry: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js',
+						global: 'gsap',
+					},{
+						module: 'TweenLite',
+						entry: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenLite.min.js',
+						global: 'gsap',
+					},
+				],
+			}),
 
 			new ImageminPlugin({
 				test: /\.(jpe?g|png|gif|svg)$/i,

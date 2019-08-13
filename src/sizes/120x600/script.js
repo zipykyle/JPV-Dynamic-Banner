@@ -1,18 +1,7 @@
 require('@project/styles/global.scss');
-require('@160x600/style.scss');
+require('@120x600/style.scss');
 
 import { TweenLite, TimelineMax} from 'gsap';
-
-
-// // Frame 1 Content
-// var devDynamicContent = {};
-// 	devDynamicContent.frameOne = [{}];
-// 	devDynamicContent.frameOne[0].line1 = 'Register test test and get';
-// 	devDynamicContent.frameOne[0].line2 = '10 Free dude dude Spins';
-// 	devDynamicContent.frameOne[0].line3 = 'No Deposit Required';
-// 	devDynamicContent.frameOne[0].cta = 'Register Now';
-
-
 
 
 // Broadcast Events shim
@@ -49,8 +38,8 @@ var timeline = (function MasterTimeline() {
 		tl = new TimelineMax({repeat: -1, onStart: updateStart, onComplete: updateComplete, onUpdate: updateStats});
 		
 		function nest(name){
-			let e = document.querySelector(name);
-			return e;
+			var elt = document.querySelector(name);
+			return elt;
 		}
 		
 		
@@ -62,15 +51,13 @@ var timeline = (function MasterTimeline() {
 		
 		var frameStart = 0.0;
 		
-		var frlogo = nest('.fr-logo'),
+		var fr01Line1 = nest('.fr-f1-lines-l1'),
+			frlogo = nest('.fr-logo'),
 			fr01 = nest('.fr-f1'),
 			fr01Bg = nest('.fr-f1-bg'),
-			fr01Line1 = nest('.fr-f1-lines-l1'),
 			fr01Line2 = nest('.fr-f1-lines-l2'),
 			fr01Line3 = nest('.fr-f1-lines-l3'),
 			fr01Cta = nest('.fr-f1 .cta-btn'),
-			
-			
 			
 			fr02 = nest('.fr-f2'),
 			fr02Cube = nest('.fr-f2-slide-cube'),
@@ -94,7 +81,9 @@ var timeline = (function MasterTimeline() {
 			fr04Line2 = nest('.fr-f4-lines-l2'),
 			fr04Line3 = nest('.fr-f4-lines-l3'),
 			fr04Cta = nest('.fr-f4 .cta-btn');
-
+		
+		
+		
 		
 		function sceneOne(){
 			var tlBG = new TimelineMax({repeat: -1});
@@ -119,11 +108,10 @@ var timeline = (function MasterTimeline() {
 		function sceneTwo(){
 			var tl = new TimelineMax();
 			tl
-				.to(fr01,0.0, {opacity:0,force3D:true}, 0.1)
 				.from(fr02,0.0, {opacity:0,force3D:true}, 0.1)
 				.from(fr02Cube,frSD, {opacity:1, x:-555, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.3)
 				.from(fr02Bg,frSD, {opacity:0}, 0.4)
-				.from(fr02Toon,frSD, {opacity:0,scale: 1.5, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.5)
+				.from(fr02Toon,frSD, {opacity:0, x:-700, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.5)
 				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.6)
 				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.7)
 				.from(fr02Line3, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)},0.8)
@@ -150,22 +138,16 @@ var timeline = (function MasterTimeline() {
 			// Join over 1000 000 000
 			var tlBG = new TimelineMax({repeat: -1});
 			tlBG.to(fr04Bg, 25, {
-				backgroundPosition: "0 601px",
+				backgroundPosition: "0 1200px",
 				ease: Power0.easeNone,
 				autoRound:false,
 			});
 			
-			var Cont={val:0} , NewVal = 100 ;
-			
 			var tl = new TimelineMax();
 			tl
-				.to(fr03,0.0, {opacity:0,force3D:true}, 0.1)
 				.from(fr04,1.0, {opacity:0,force3D:true}, 0.5)
 				.from(fr04Bg, frSD, {opacity:0}, 0.5)
 				.from(fr04Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.5)
-				.to(Cont,1,{val:1000000,roundProps:"val",onUpdate:function(){
-						fr04Line2.innerHTML=Cont.val
-					}})
 				.from(fr04Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.5)
 				.from(fr04Line3, frSD, {opacity:0, y: 20, ease:Elastic.easeOut.config(2, 1)},  0.5)
 				.from(fr04Cta, frSD, {scale:0.1 ,opacity:0 , ease:Elastic.easeOut.config(1, 0.3)},  0.5)
@@ -173,8 +155,6 @@ var timeline = (function MasterTimeline() {
 				.to(fr04Line2, frSOD, {opacity:0}, 2.0)
 				.to(fr04Line3, frSOD, {opacity:0}, 2.0);
 			return tl;
-			
-			
 		}
 		
 		tl
@@ -184,9 +164,8 @@ var timeline = (function MasterTimeline() {
 			.add(sceneFour(), 'frame4+=1.5');
 		
 		// DEBUG:
-		// tl.play('frame2+=0'); // start playing at label:frame3
-		// tl.pause('frame1=1.0'); // pause the timeline at label:frame3
-		tl.play('frame2=1.0'); // pause the timeline at label:frame3
+		// tl.play('frame3'); // start playing at label:frame3
+		// tl.pause('frame3=3.5'); // pause the timeline at label:frame3
 	}
 	
 	function updateStart() {
@@ -246,5 +225,6 @@ timeline.init();
 		tl.restart();
 	});
 })();
+
 
 console.log('hello world');
