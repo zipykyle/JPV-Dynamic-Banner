@@ -4,17 +4,32 @@ $fr1line1Top:100px;
 $fr1line2Top:180px;
 $fr1line3Top:350px;
 
+$fr2line1Top:95px;
+$fr2line2Top:115px;
+$fr2line3Top:160px;
+
+$fr3line1Top:75px;
+$fr3line2Top:95px;
+$fr3line3Top:140px;
+$fr3ProvidersTop:156px;
+
+$fr4line1Top:95px;
+$fr4line2Top:115px;
+$fr4line3Top:160px;
+
 
 .fr-f1 {
-	&-bg {
 
+	&-bg {
 		display: block;
 		position: absolute;
-		background-size:  600px 300px ;
+		background-size:  320px 600px ;
+		background: $acc1-color repeat-y url("jpv-bg-160x600.jpg") 0 0;
 		top: 0;
 		left: 0;
 		z-index: 0;
-
+		width:160px ;
+		height: 600px;
 	}
 	&-lines {
 		&-l1{
@@ -33,4 +48,150 @@ $fr1line3Top:350px;
 			top: $fr1line3Top;
 		}
 	}
+
+}
+.fr-f2 {
+	&-slide {
+		height: 600px;
+		width: 600px;
+		position: relative;
+		display: block;
+		top: 0;
+		left: 0;
+		@include opacityFix(100, 1);
+		transform: rotate(45deg);
+
+
+		&-cube {
+			background-color: $acc2-color;
+			position: absolute;
+			height: 600px;
+			width: 600px;
+			left: -170px;
+			@include opacityFix(0, 0);
+		}
+
+	}
+	&-bg {
+		background: #EDBC58 repeat-y url("../jpv-bg-250x300.jpg") top right;
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: absolute;
+		background-size:  600px $banHeight ;
+		top: 0;
+		left: 0;
+	}
+
+	&-toon {
+		background: no-repeat url("../jpv-char.png") bottom center;
+		background-size: cover;
+		width: 101px;
+		height: 173px;
+		position: absolute;
+		left: -15px;
+		bottom: 0;
+		display: block;
+	}
+
+
+	&-lines {
+		&-l1{
+			top: $fr2line1Top;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr2line2Top;
+		}
+		&-l3{
+			top: $fr2line3Top;
+		}
+	}
+	&-terms{}
+}
+.fr-f3 {
+	&-toon {
+		background: no-repeat url("../jpv-char.png") bottom center;
+		background-size: cover;
+		width: 101px;
+		height: 173px;
+		position: absolute;
+		left: -15px;
+		bottom: 0;
+		display: block;
+		@include opacityFix(0, 0);
+	}
+	&-lines {
+		&-l1{
+			top: $fr3line1Top;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr3line2Top;
+		}
+		&-l3{
+			top: $fr3line3Top;
+		}
+	}
+	&-providers {
+		display: block;
+		position: absolute;
+		top: $fr3ProvidersTop;
+		width: 100%;
+		.logo1, .logo2, .logo3 {
+			position: absolute;
+		}
+		.logo1 {
+			background: no-repeat url("../jpv-char.png") -15px 1px;
+			width: 68px;
+			height: 20px;
+			background-size: 101px 250px;
+			left: 5px;
+		}
+		.logo2 {
+			background: no-repeat url("../jpv-char.png") -3px -21px;
+			width: 92px;
+			height: 26px;
+			background-size: 101px 250px;
+			margin: 0 auto;
+			@extend %center;
+		}
+		.logo3 {
+			background: no-repeat url("../jpv-char.png") -5px -49px;
+			width: 86px;
+			height: 22px;
+			background-size: 101px 250px;
+			right: 5px;
+		}
+	}
+}
+.fr-f4 {
+	&-bg {
+		background: $acc1-color repeat-y url("../jpv-bg-250x300.jpg") 0 0;
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: absolute;
+		background-size:  600px $banHeight ;
+		top: 0;
+		left: 0;
+		@include opacityFix(100%, 1);
+
+	}
+	&-lines {
+		&-l1{
+			top: $fr4line1Top;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr4line2Top;
+		}
+		&-l3{
+			top: $fr4line3Top;
+		}
+	}
+	&-terms{}
 }

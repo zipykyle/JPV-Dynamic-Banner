@@ -1,9 +1,12 @@
 $displayBannerSizes: (
+				(120x600, 120px, 600px),
 				(160x600, 160px, 600px),
+				(300x250, 300px, 250px),
 				(300x600, 300px, 600px),
-				(500x90, 500px, 90px),
+				(320x50, 320px, 50px),
 				(728x90, 728px, 90px)
 );
+
 
 @each $label, $width, $height in $displayBannerSizes {
 	.dbs-#{$label} {
