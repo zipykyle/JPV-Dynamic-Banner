@@ -124,17 +124,6 @@ $fr4line3Top:300px;
 	&-terms{}
 }
 .fr-f3 {
-	&-toon {
-		background: no-repeat url("jpv-char-160x600.png") bottom center;
-		background-size: cover;
-		width: 101px;
-		height: 173px;
-		position: absolute;
-		left: -15px;
-		bottom: 0;
-		display: block;
-		@include opacityFix(0, 0);
-	}
 	&-lines {
 		&-l1{
 			top: $fr3line1Top;
@@ -180,18 +169,6 @@ $fr4line3Top:300px;
 	}
 }
 .fr-f4 {
-	&-bg {
-		//background: $acc1-color repeat-y url("jpv-bg-160x600.jpg") 0 0;
-		height: 100%;
-		width: 100%;
-		display: block;
-		position: absolute;
-		background-size:  320px $banHeight ;
-		top: 0;
-		left: 0;
-		@include opacityFix(100%, 1);
-
-	}
 	&-lines {
 		&-l1{
 			top: $fr4line1Top;

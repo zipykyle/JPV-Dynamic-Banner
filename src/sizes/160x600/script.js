@@ -122,10 +122,11 @@ var timeline = (function MasterTimeline() {
 			tl
 				.from(fr01,0.0, {opacity:1,force3D:true}, 0.1)
 				.from(frlogo, frSD, {opacity:1, ease:Elastic.easeOut.config(2, 1)}, 0.2)
-				.from(fr01Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)}, 0.2)
+				.from(fr01Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},0.2)
 				.from(fr01Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)}, 0.3)
 				.from(fr01Line3, frSD, {opacity:0, y: 20, ease:Elastic.easeOut.config(2, 1)}, 0.4)
-				.from(fr01Cta, frSD, {scale:0.1 ,opacity:0,  ease:Elastic.easeOut.config(1, 0.3)}, 0.4);
+				.from(fr01Cta, frSD, {scale:0.1 ,opacity:0,  ease:Elastic.easeOut.config(1, 0.3)}, 0.5);
+				
 			return tl;
 			
 		}
@@ -133,15 +134,20 @@ var timeline = (function MasterTimeline() {
 		function sceneTwo(){
 			var tl = new TimelineMax();
 			tl
-				.to(fr01,0.0, {opacity:0,force3D:true}, 0.1)
-				.from(fr02,0.0, {opacity:0,force3D:true}, 0.1)
-				.from(fr02Cube,frSD, {opacity:1, x:-850, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.3)
-				.from(fr02Bg,frSD, {opacity:0}, 0.4)
-				.from(fr02Toon,frSD, {opacity:0,scale: 1.5, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.5)
-				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.6)
-				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.7)
-				.from(fr02Line3, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)},0.8)
-				.from(fr02Cta, frSD, {opacity:1}, 0.7);
+				.to(fr01Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},0.0)
+				.to(fr01Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)}, 0.1)
+				.to(fr01Line3, frSD, {opacity:0, y: 20, ease:Elastic.easeOut.config(2, 1)}, 0.2)
+				.from(fr01Cta, frSD, {scale:0.1 ,opacity:0,  ease:Elastic.easeOut.config(1, 0.3)}, 0.2)
+				.to(fr01,0.0, {opacity:0,force3D:true}, 0.3)
+				.from(fr02,0.0, {opacity:0,force3D:true}, 0.4)
+				.from(fr02Cube,frSD, {opacity:1, x:-850, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.5)
+				.from(fr02Bg,frSD, {opacity:0}, 0.5)
+				.from(fr02Toon,frSD, {opacity:0,scale: 1.5, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.6)
+				.from(fr02Cta, frSD, {opacity:1}, 0.6)
+				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.7)
+				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.8)
+				.from(fr02Line3, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)},0.9);
+				
 			return tl;
 		}
 		
@@ -161,35 +167,40 @@ var timeline = (function MasterTimeline() {
 		}
 		
 		function sceneFour(){
-			// Join over 1000 000 000
+			
 			
 			var tl = new TimelineMax();
 			tl
-				.to(fr02Cube,frSD, {opacity:0, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.3)
+				// Choose from 1200+ games
+				.to(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.0)
+				.to(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.1)
+				.to(fr03Line3, frSD, {opacity:0,scale:0.09, ease:Elastic.easeOut.config(2, 1)},0.2)
+				.to(fr03Providers, frSD, {opacity:0},0.3)
+				.to(fr02Cube,frSD, {opacity:0, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.4)
 				.to(fr02Bg,frSD, {opacity:0}, 0.4)
 				.to(fr02Toon,frSD, {opacity:0,y: 200, scale: 0.8, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.5)
-				.to(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.4)
-				.to(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.5)
-				.to(fr03Line3, frSD, {opacity:0,scale:0.09, ease:Elastic.easeOut.config(2, 1)},0.6)
-				.to(fr03Providers, frSD, {opacity:0},1)
+				
+				
+				// Join over 1000 000 000
 				.from(fr04,1.0, {opacity:0,force3D:true}, 0.5)
-				.from(fr04Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.5)
-				.from(fr04Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.5)
-				.from(fr04Line3, frSD, {opacity:0, y: 20, ease:Elastic.easeOut.config(2, 1)},  0.5)
-				.from(fr04Cta, frSD, {scale:0.1 ,opacity:0 , ease:Elastic.easeOut.config(1, 0.3)},  0.5)
-				.to(fr04Line1, frSOD, {opacity:0}, .1)
-				.to(fr04Line2, frSOD, {opacity:0}, .2)
-				.to(fr04Line3, frSOD, {opacity:0}, .3);
+				.from(fr04Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.6)
+				.from(fr04Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.7)
+				.from(fr04Line3, frSD, {opacity:0, y: 20, ease:Elastic.easeOut.config(2, 1)},  0.8)
+				.from(fr04Cta, frSD, {scale:0.1 ,opacity:0 , ease:Elastic.easeOut.config(1, 0.3)},  0.9)
+				
+				.to(fr04Line1, frSOD, {opacity:0}, 2.8)
+				.to(fr04Line2, frSOD, {opacity:0}, 2.9)
+				.to(fr04Line3, frSOD, {opacity:0}, 3);
 			return tl;
 			
 			
 		}
 		
 		tl
-			.add(sceneOne(), 'frame1+=0')
-			.add(sceneTwo(),'frame2+=0.0')
-			.add(sceneThree(), 'frame3+=0.0')
-			.add(sceneFour(), 'frame4+=0.0');
+			.add(sceneOne(), 'frame1+=0.0')
+			.add(sceneTwo(),'frame2+=1.0')
+			.add(sceneThree(), 'frame3+=1.5')
+			.add(sceneFour(), 'frame4+=2.0');
 		
 		// DEBUG:
 		// tl.play('frame2+=0'); // start playing at label:frame3
@@ -243,8 +254,7 @@ timeline.init();
 	
 	TweenLite.delayedCall(maxAnimationTime, stopAnimation);
 	
-	tl.add('replayBtnFrame')
-		.from('.replay-btn', 0.5, { opacity: 1, ease: Power4.easeInOut }, 'replayBtnFrame');
+	tl.add('replayBtnFrame').from('.replay-btn', 0.5, { opacity: 1, ease: Power4.easeInOut }, 'replayBtnFrame');
 	
 	
 	var replayBtn = document.querySelector('.replay-btn');
@@ -254,5 +264,3 @@ timeline.init();
 		tl.restart();
 	});
 })();
-
-console.log('hello world');

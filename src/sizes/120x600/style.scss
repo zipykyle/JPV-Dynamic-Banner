@@ -1,0 +1,191 @@
+@import "@project/styles/global.scss";
+
+$banHeight: 600px;
+
+$ctaPosBot: 30px;
+
+$fr1line1Top:180px;
+$fr1line2Top:240px;
+$fr1line3Top:380px;
+
+$fr2line1Top:115px;
+$fr2line2Top:150px;
+$fr2line3Top:250px;
+
+$fr3line1Top:115px;
+$fr3line2Top:185px;
+$fr3line3Top:250px;
+$fr3ProvidersTop:380px;
+
+$fr4line1Top:220px;
+$fr4line2Top:260px;
+$fr4line3Top:300px;
+
+.coin-fall {
+	background-size:  240px 600px ;
+	background: $acc1-color repeat-y url("jpv-bg-120x600.jpg") 0 0;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+
+
+.fr-f1 {
+
+	&-bg {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		width:120px ;
+		height: 600px;
+	}
+	&-lines {
+		&-l1{
+			z-index: 3;
+			top: $fr1line1Top;
+		}
+		&-l2{
+			z-index: 4;
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr1line2Top;
+		}
+		&-l3{
+			z-index: 5;
+			@extend %center;
+			top: $fr1line3Top;
+		}
+	}
+
+}
+.fr-f2 {
+	&-slide {
+		height: 1200px;
+		width: 1200px;
+		position: relative;
+		display: block;
+		top: 0;
+		left: 0;
+		@include opacityFix(100, 1);
+		transform: rotate(45deg);
+
+
+		&-cube {
+			background-color: $acc2-color;
+			position: absolute;
+			height: 1200px;
+			width: 1200px;
+			left: -850px;
+			@include opacityFix(0, 0);
+		}
+
+	}
+	&-bg {
+		background: #EDBC58 repeat-y url("jpv-bg-120x600.jpg") top right;
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: absolute;
+		background-size:  240px $banHeight ;
+		top: 0;
+		left: 0;
+	}
+	&-toon {
+		background: no-repeat url("jpv-char-120x600.png") -19px -101px;
+		background-size: cover;
+		width: 160px;
+		height: 258px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: block;
+	}
+	&-lines {
+		&-l1{
+			top: $fr2line1Top;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr2line2Top;
+		}
+		&-l3{
+			top: $fr2line3Top;
+		}
+	}
+	&-terms{}
+}
+.fr-f3 {
+	&-lines {
+		&-l1{
+			top: $fr3line1Top;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr3line2Top;
+		}
+		&-l3{
+			top: $fr3line3Top;
+		}
+	}
+	&-providers {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		.logo1, .logo2, .logo3 {
+			@extend %center;
+			width: 120px;
+		}
+		.logo1 {
+			background: no-repeat url("jpv-char-120x600.png") -20px 0;
+			height: 25px;
+			background-size: 160px 360px;
+			bottom: 135px;
+		}
+		.logo2 {
+			background: no-repeat url("jpv-char-120x600.png") -20px -30px;
+
+			height: 28px;
+			background-size: 160px 360px;
+			bottom: 100px;
+		}
+		.logo3 {
+			background: no-repeat url("jpv-char-120x600.png") -20px -58px;
+			height: 28px;
+			background-size: 160px 360px;
+			bottom: 70px;
+		}
+	}
+}
+.fr-f4 {
+	&-lines {
+		&-l1{
+			top: $fr4line1Top;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr4line2Top;
+		}
+		&-l3{
+			top: $fr4line3Top;
+		}
+	}
+	&-terms{}
+}
+
+.cta-btn {
+	font-size: 18px;
+	max-width: 130px;
+	border-radius: 50px;
+	padding: 5px 0;
+	bottom: $ctaPosBot;
+}
