@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06f9803f-2f88-47d3-b7d0-f8a5e2042b06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/jpv-bg2-728x90.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/jpv-bg2-728x90.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sizes/728x90/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+            <state relative-caret-position="49">
+              <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -45,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sizes/728x90/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
+            <state relative-caret-position="-750">
+              <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -281,16 +277,15 @@
       <workItem from="1565703929943" duration="11053000" />
       <workItem from="1565771228587" duration="13666000" />
       <workItem from="1565857360909" duration="13590000" />
-      <workItem from="1565959170383" duration="7607000" />
+      <workItem from="1565959170383" duration="8216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69848000" />
+    <option name="totallyTimeSpent" value="70457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1424" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49569893" visible="true" weight="0.26550078" />
       <window_info id="Structure" order="1" sideWeight="0.5043011" side_tool="true" visible="true" weight="0.26550078" />
@@ -521,9 +516,6 @@
     <entry file="file://$PROJECT_DIR$/src/sizes/728x90/jpv-bg2-728x90.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sizes/728x90/jpv-bg-728x90.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sizes/styles/global-frame.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -537,6 +529,9 @@
     <entry file="file://$PROJECT_DIR$/src/sizes/728x90/jpv-char-728x90.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sizes/728x90/jpv-bg-728x90.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sizes/728x90/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -546,15 +541,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sizes/728x90/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
+        <state relative-caret-position="-750">
+          <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sizes/728x90/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        <state relative-caret-position="49">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
         </state>
       </provider>
     </entry>
