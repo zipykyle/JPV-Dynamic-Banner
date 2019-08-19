@@ -4,7 +4,8 @@ $displayBannerSizes: (
 				(300x250, 300px, 250px),
 				(300x600, 300px, 600px),
 				(320x50, 320px, 50px),
-				(728x90, 728px, 90px)
+				(728x90, 728px, 90px),
+				(468x90, 468px, 90px)
 );
 
 
@@ -64,8 +65,14 @@ html, body {
 .h4 {font-size: 25px;
 	line-height: 25px;
 }
+.h4h {font-size: 20px;
+	line-height: 20px;
+}
 .h5 {font-size: 15px;
 	line-height: 15px;
+}
+.h6 {font-size: 10px;
+	line-height: 12px;
 }
 
 
