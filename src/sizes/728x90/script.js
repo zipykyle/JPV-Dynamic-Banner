@@ -117,7 +117,7 @@ var timeline = (function MasterTimeline() {
 			
 			var tl = new TimelineMax();
 			tl
-				.from(fr01,0.0, {opacity:1,force3D:true}, 0.1)
+				.from(fr01,0.0, {opacity:1,force3D:true}, 0.0)
 				.from(frlogo, frSD, {opacity:1, ease:Elastic.easeOut.config(2, 1)}, 0.2)
 				.from(fr01Line1, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)},0.2)
 				.to(fr01Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)},1.5)
@@ -173,17 +173,16 @@ var timeline = (function MasterTimeline() {
 				.to(fr02Cube,frSD, {opacity:0, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.4)
 				.to(fr02Bg,frSD, {opacity:0}, 0.4)
 				.to(fr02Toon,frSD, {opacity:0,y: 200, scale: 0.8, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.5)
-				
 				// Join over 1000 000 000
 				.from(fr04,1.0, {opacity:0,force3D:true}, 0.5)
-				
+				.from(fr04Cta, frSD, {scale:0.1 ,opacity:0 , ease:Elastic.easeOut.config(1, 0.3)},  0.5)
 				.from(fr04Line1, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)},  0.5)
 				.to(fr04Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)},  1.5)
 				
 				.from(fr04Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)},  1.5)
-				.to(fr04Line2, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)},  2.5)
+				.to(fr04Line2, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)},  2.5);
 				
-				.from(fr04Cta, frSD, {scale:0.1 ,opacity:0 , ease:Elastic.easeOut.config(1, 0.3)},  1.5)
+
 				
 			
 			return tl;
@@ -192,9 +191,9 @@ var timeline = (function MasterTimeline() {
 		}
 		
 		tl
-			.add(sceneOne(), 'frame1+=0.0')
-			.add(sceneTwo(),'frame2-=1.0')
-			.add(sceneThree(), 'frame3-=0.8')
+			.add(sceneOne(), 'frame1')
+			.add(sceneTwo(),'frame2')
+			.add(sceneThree(), 'frame3')
 			.add(sceneFour(), 'frame4-=0.5');
 		
 		// DEBUG:

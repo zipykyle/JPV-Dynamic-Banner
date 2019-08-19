@@ -41,7 +41,7 @@ var timeline = (function MasterTimeline() {
 
 	function initTimeline() {
 		document.querySelector('#ad .wz-banner').style.display = 'block';
-		document.getElementById('ad').addEventListener('click', doClickTag);
+		// document.getElementById('clickthrough-button').addEventListener('click', doClickTag);
 		createTimeline();
 	}
 
