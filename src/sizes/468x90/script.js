@@ -1,5 +1,5 @@
 require('@project/styles/global.scss');
-require('@728x90/style.scss');
+require('@468x90/style.scss');
 
 import { TweenLite, TimelineMax} from 'gsap';
 
@@ -132,7 +132,7 @@ var timeline = (function MasterTimeline() {
 		function sceneTwo(){
 			var tl = new TimelineMax();
 			tl
-				
+				.to(frlogo, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.2)
 				.to(fr01,0.0, {opacity:0,force3D:true}, 0.3)
 				.from(fr02,0.0, {opacity:0,force3D:true}, 0.4)
 				.from(fr02Cube,frSD, {opacity:1, x:-850, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.5)
@@ -168,7 +168,7 @@ var timeline = (function MasterTimeline() {
 			var tl = new TimelineMax();
 			tl
 			// Choose from 1200+ games
-				
+				.from(frlogo, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.2)
 				.to(fr03Providers, frSD, {opacity:0},0.3)
 				.to(fr02Cube,frSD, {opacity:0, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.4)
 				.to(fr02Bg,frSD, {opacity:0}, 0.4)
@@ -201,8 +201,10 @@ var timeline = (function MasterTimeline() {
 		// tl.play('frame2+=0'); // start playing at label:frame3
 		// tl.play('frame1=1.0'); // pause the timeline at label:frame3
 		// tl.pause('frame1+=1.5'); // pause the timeline at label:frame3
-		// tl.pause('frame2+=3.0'); // pause the timeline at label:frame3
-		// tl.pause('frame3+=1.0'); // pause the timeline at label:frame3
+		// tl.pause('frame1+=1.0'); // pause the timeline at label:frame3
+		// tl.pause('frame2+=2.5'); // pause the timeline at label:frame3
+		// tl.pause('frame3+=0.5'); // pause the timeline at label:frame3
+		// tl.pause('frame3+=1.2'); // pause the timeline at label:frame3
 		// tl.pause('frame4+=1.5'); // pause the timeline at label:frame3
 	}
 	

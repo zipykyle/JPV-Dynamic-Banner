@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06f9803f-2f88-47d3-b7d0-f8a5e2042b06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sizes/468x90/jpv-bg-728x90.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/468x90/jpv-bg2-728x90.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/468x90/jpv-char-728x90.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/468x90/screenshot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/468x90/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectconfig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/projectconfig.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/500x90/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/500x90/screenshot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/500x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/500x90/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,5 +93,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/sizes/468x90/script.js</url>
+          <line>185</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
