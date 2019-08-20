@@ -8,18 +8,17 @@ $fr1line1Top:80px;
 $fr1line2Top:105px;
 $fr1line3Top:160px;
 
-$fr2line1Top:80px;
-$fr2line2Top:105px;
-$fr2line3Top:155px;
+$fr2line1Top:95px;
+$fr2line2Top:115px;
 
-$fr3line1Top:70px;
-$fr3line2Top:90px;
-$fr3line3Top:135px;
+$fr3line1Top:85px;
+$fr3line2Top:110px;
+$fr3line3Top:150px;
 $fr3ProvidersTop:200px;
 
-$fr4line1Top:90px;
-$fr4line2Top:115px;
-$fr4line3Top:160px;
+$fr4line1Top:80px;
+$fr4line2Top:105px;
+$fr4line3Top:150px;
 
 .coin-fall {
 	background-size:  320px 300px ;
@@ -36,17 +35,6 @@ $fr4line3Top:160px;
 
 .fr-f1 {
 
-	&-bg {
-		display: block;
-		position: absolute;
-		//background-size:  320px 300px ;
-		//background: $acc1-color repeat-y url("jpv-bg-300x250.jpg") 0 0;
-		top: 0;
-		left: 0;
-		z-index: 0;
-		width:300px ;
-		height: 300px;
-	}
 	&-lines {
 		&-l1{
 			z-index: 3;
@@ -57,84 +45,6 @@ $fr4line3Top:160px;
 			padding: 5px 0;
 			text-shadow: $acc3-color 0 0 5px;
 			top: $fr1line2Top;
-		}
-		&-l3{
-			z-index: 5;
-			@extend %center;
-			top: $fr1line3Top;
-		}
-	}
-
-}
-.fr-f2 {
-	&-slide {
-		height: 1200px;
-		width: 1200px;
-		position: relative;
-		display: block;
-		top: 0;
-		left: 0;
-		@include opacityFix(100, 1);
-		transform: rotate(45deg);
-
-
-		&-cube {
-			background-color: $acc2-color;
-			position: absolute;
-			height: 1200px;
-			width: 1200px;
-			left: -850px;
-			@include opacityFix(0, 0);
-		}
-
-	}
-	&-bg {
-		background: #EDBC58 repeat-y url("jpv-bg-300x250.jpg") top right;
-		height: 100%;
-		width: 100%;
-		display: block;
-		position: absolute;
-		background-size:  600px $banHeight ;
-		top: 0;
-		left: 0;
-	}
-	&-toon {
-		background: no-repeat url("jpv-char-300x250.png") bottom center;
-		background-size: cover;
-		width: 101px;
-		height: 175px;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		display: block;
-	}
-	&-lines {
-		&-l1{
-			top: $fr2line1Top;
-		}
-		&-l2{
-			padding: 5px 0;
-			text-shadow: $acc3-color 0 0 5px;
-			top: $fr2line2Top;
-		}
-		&-l3{
-			top: $fr2line3Top;
-		}
-	}
-	&-terms{}
-}
-.fr-f3 {
-	&-lines {
-		&-l1{
-			top: $fr3line1Top;
-		}
-		&-l2{
-			padding: 5px 0;
-			text-shadow: $acc3-color 0 0 5px;
-			top: $fr3line2Top;
-		}
-		&-l3{
-			top: $fr3line3Top;
 		}
 	}
 	&-providers {
@@ -170,8 +80,112 @@ $fr4line3Top:160px;
 
 		}
 	}
+
+}
+.fr-f2 {
+	&-lines {
+		&-l1{
+			top: $fr2line1Top;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr2line2Top;
+		}
+
+	}
+	&-providers {
+
+		position: absolute;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		bottom: 67px;
+		.logo1, .logo2, .logo3 {
+			display: flex;
+		}
+		.logo1 {
+			background: no-repeat url("jpv-char-300x250.png") 0 0;
+			width: 80px;
+			height: 25px;
+			background-size: 101px 250px;
+
+		}
+		.logo2 {
+			background: no-repeat url("jpv-char-300x250.png") 0 -23px;
+			width: 93px;
+			height: 28px;
+			background-size: 101px 250px;
+
+		}
+		.logo3 {
+			background: no-repeat url("jpv-char-300x250.png") 0 -47px;
+			width: 90px;
+			height: 28px;
+			background-size: 101px 250px;
+
+		}
+	}
+}
+.fr-f3 {
+	&-lines {
+		&-l1{
+			top: $fr3line1Top;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr3line2Top;
+		}
+		&-l3{
+			top: $fr3line3Top;
+		}
+	}
+	&-terms{}
 }
 .fr-f4 {
+	&-slide {
+		height: 1200px;
+		width: 1200px;
+		position: relative;
+		display: block;
+		top: 0;
+		left: 0;
+		@include opacityFix(100, 1);
+		transform: rotate(45deg);
+
+
+		&-cube {
+			background-color: #144553;
+			position: absolute;
+			height: 1200px;
+			width: 1200px;
+			left: -850px;
+			@include opacityFix(0, 0);
+		}
+
+	}
+	&-bg {
+		background: #42efe1 repeat-y url("jpv-bg-300x250.jpg") top right;
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: absolute;
+		background-size:  600px $banHeight ;
+		top: 0;
+		left: 0;
+	}
+	&-toon {
+		background: no-repeat url("jpv-char-300x250.png") bottom center;
+		background-size: cover;
+		width: 101px;
+		height: 175px;
+		position: absolute;
+		right: -40px;
+		bottom: -30px;
+		display: block;
+	}
 	&-lines {
 		&-l1{
 			top: $fr4line1Top;
@@ -187,6 +201,7 @@ $fr4line3Top:160px;
 	}
 	&-terms{}
 }
+
 
 .cta-btn {
 	font-size: 22px;

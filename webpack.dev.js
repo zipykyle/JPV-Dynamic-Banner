@@ -46,7 +46,8 @@ let getHTML = () => {
 		t.chunks = [ `${size}` ];
 		t.inject = true;
 		t.alwaysWriteToDisk = true;
-		t.title = `${size}`;
+		t.title = `${size}`,
+		t.data= projectData,
 		t.bannerSizes = `${size}`;
 		t.filename = path.resolve( __dirname, `dist/${ size }/index.html`);
 
