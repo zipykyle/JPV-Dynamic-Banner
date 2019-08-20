@@ -61,7 +61,7 @@ let config = {
 		minimizer: [
 			new UglifyJsPlugin({
 				cache: true,
-				parallel: true,
+				parallel: false,
 				sourceMap: false // set to true if you want JS source maps
 			}),
 			new OptimizeCSSAssetsPlugin({})
@@ -89,10 +89,7 @@ let config = {
 					MiniCssExtractPlugin.loader,
 					{
 						loader: 'css-loader',
-						options: {
-							modules: true,
-							importLoaders: 1
-						}
+
 					},
 					{
 						loader: 'postcss-loader',
@@ -205,6 +202,7 @@ Object.keys( projectData.sizes ).forEach( (size)=> {
 				template: path.resolve( __dirname, `src/sizes/${ size }/index.hbs`),
 				hash: true,
 				inject: true,
+				bannerSizes: `${size}`,
 				alwaysWriteToDisk: true,
 				minify: { collapseWhitespace: true },
 				title: size,
@@ -245,7 +243,7 @@ Object.keys( projectData.sizes ).forEach( (size)=> {
 				},
 				plugins: [
 					imageminMozjpeg({
-						quality: 30,
+						quality: 60,
 						progressive: true
 					})
 				]
@@ -254,7 +252,8 @@ Object.keys( projectData.sizes ).forEach( (size)=> {
 		],
 		output: {
 			path: path.join( __dirname, `dist/${size}` ),
-			publicPath: `/${size}/`,
+			// publicPath: `/${size}/`,
+			publicPath: '',
 			filename: 'index.js'
 		}
 	}) );
