@@ -34,13 +34,76 @@ $fr4line3Top:150px;
 
 
 .fr-f1 {
+	.game-card {
+		&.one {
+			top: 25px;
+			transform: scale(0.9) rotate(-25deg);
+			left: -40px;
+		}
+		&.two {
+			top: 30px;
+			left: -20px;
+			transform: rotate(-15deg);
+		}
 
+		$gcW:120px;
+		$gcH:140px;
+		background-color: #292828;
+		border-radius: 5px;
+		width: $gcW;
+		height: $gcH;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		overflow: hidden;
+		&-label {
+			box-shadow: #303030 0 2px 4px;
+			position: absolute;
+			width: $gcW;
+			height: 25px;
+			transform: rotate(45deg);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #EDBC58;
+			top: 8px;
+			right: -37px;
+			span {
+				font-weight: bold;
+				font-size: 13px;
+			}
+		}
+		&-thumb {
+			display: flex;
+			border-radius: 100%;
+			background-color: #292828;
+			border:3px solid #444242;
+			width: $gcW/1.2;
+			height: $gcW/1.2;
+			overflow: hidden;
+			justify-content: center;
+			align-content: center;
+			img {
+				width: 120%;
+				height: auto;
+			}
+
+		}
+	}
 	&-lines {
 		&-l1{
 			z-index: 3;
 			top: $fr1line1Top;
+			left: 105px;
+			margin: 0 0;
+			right: auto;
 		}
 		&-l2{
+			left: 105px;
+			right: auto;
+			margin: 0 0;
 			z-index: 4;
 			padding: 5px 0;
 			text-shadow: $acc3-color 0 0 5px;
@@ -55,20 +118,21 @@ $fr4line3Top:150px;
 		flex-direction: row;
 		justify-content: space-evenly;
 		bottom: 67px;
+		transform: scale(0.8);
 		.logo1, .logo2, .logo3 {
 			display: flex;
 		}
 		.logo1 {
-			background: no-repeat url("jpv-char-300x250.png") 0 0;
+			background: no-repeat url("jpv-char-300x250.png") -11px 0;
 			width: 80px;
-			height: 25px;
+			height: 24px;
 			background-size: 101px 250px;
 
 		}
 		.logo2 {
-			background: no-repeat url("jpv-char-300x250.png") 0 -23px;
+			background: no-repeat url("jpv-char-300x250.png") -2px -23px;
 			width: 93px;
-			height: 28px;
+			height: 24px;
 			background-size: 101px 250px;
 
 		}
@@ -208,3 +272,4 @@ $fr4line3Top:150px;
 	padding: 3px 0;
 	bottom: $ctaPosBot;
 }
+
