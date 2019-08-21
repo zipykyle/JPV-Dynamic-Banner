@@ -1,19 +1,20 @@
 projectname: jackpotvillage
 projectPrettyName: JPV - Retargeting
 platform: Sizmek
+cur: kr
 sizes:
   160x600:
     link: https://www.jackpotvillage.com/
     frame01:
-      line1: New games
+      line1: New </br> games
       line2: Just added
     frame02:
-      line1: 100,000Kr
+      line1: 100,000
       line2: give away
     frame03:
       line1: Did you win
       line2: Your share of
-      line3: 100,000kr
+      line3: 100,000
     frame04:
       line1: Are you our next
       line2: Cosmic Fortune
@@ -24,12 +25,12 @@ sizes:
       line1: New games
       line2: Just added
     frame02:
-      line1: 100,000Kr
+      line1: 100,000 kr
       line2: give away
     frame03:
       line1: Did you win
       line2: Your share of
-      line3: 100,000kr
+      line3: 100,000
     frame04:
       line1: Are you our next
       line2: Cosmic Fortune
@@ -40,44 +41,44 @@ sizes:
       line1: New games
       line2: Just added
     frame02:
-      line1: 100,000Kr
+      line1: 100,000 kr
       line2: give away
     frame03:
       line1: Did you win
       line2: Your share of
-      line3: 100,000kr
+      line3: 100,000
     frame04:
       line1: Are you our next
       line2: Cosmic Fortune
       line3: Winner
   300x600:
     link: https://www.jackpotvillage.com/
-  frame01:
-    line1: New games
-    line2: Just added
-  frame02:
-    line1: 100,000Kr
-    line2: give away
-  frame03:
-    line1: Did you win
-    line2: Your share of
-    line3: 100,000kr
-  frame04:
-    line1: Are you our next
-    line2: Cosmic Fortune
-    line3: Winner
+    frame01:
+      line1: New games
+      line2: Just added
+    frame02:
+      line1: 100,000 kr
+      line2: give away
+    frame03:
+      line1: Did you win
+      line2: Your share of
+      line3: 100,000
+    frame04:
+      line1: Are you our next
+      line2: Cosmic Fortune
+      line3: Winner
   320x50:
     link: https://www.jackpotvillage.com/
     frame01:
       line1: New games
       line2: Just added
     frame02:
-      line1: 100,000Kr
+      line1: 100,000 kr
       line2: give away
     frame03:
       line1: Did you win
       line2: Your share of
-      line3: 100,000kr
+      line3: 100,000
     frame04:
       line1: Are you our next
       line2: Cosmic Fortune
@@ -88,12 +89,13 @@ sizes:
       line1: New games
       line2: Just added
     frame02:
-      line1: 100,000Kr
-      line2: give away
+      line1: 100,000
+      line2: give
+      line3: away
     frame03:
       line1: Did you win
       line2: Your share of
-      line3: 100,000kr
+      line3: 100,000
     frame04:
       line1: Are you our next
       line2: Cosmic Fortune
@@ -104,12 +106,12 @@ sizes:
       line1: New games
       line2: Just added
     frame02:
-      line1: 100,000Kr
+      line1: 100,000 kr
       line2: give away
     frame03:
       line1: Did you win
       line2: Your share of
-      line3: 100,000kr
+      line3: 100,000
     frame04:
       line1: Are you our next
       line2: Cosmic Fortune

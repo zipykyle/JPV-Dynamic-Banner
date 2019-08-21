@@ -179,7 +179,7 @@ var timeline = (function MasterTimeline() {
 		// tl.pause('frame2+=2.5'); // pause the timeline at label:frame3
 		// tl.pause('frame3+=1.8'); // pause the timeline at label:frame3
 		// tl.pause('frame4+=0.0'); // pause the timeline at label:frame3
-		// tl.play('frame1=1.0'); // pause the timeline at label:frame3
+		// tl.pause('frame1=0.2'); // pause the timeline at label:frame3
 	}
 	
 	function updateStart() {

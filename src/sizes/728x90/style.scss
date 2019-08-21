@@ -5,11 +5,11 @@ $banHeight: 90px;
 $ctaPosBot: 30px;
 
 $fr1line1Top:5px;
-$fr1line2Top:58px;
+$fr1line2Top:25px;
 $fr1line3Top:58px;
 
-$fr2line1Top:25px;
-$fr2line2Top:23px;
+$fr2line1Top:5px;
+$fr2line2Top:25px;
 $fr2line3Top:27px;
 
 $fr3line1Top:18px;
@@ -69,6 +69,22 @@ $fr4line3Top:25px;
 
 }
 .fr-f2 {
+	&-lines {
+		&-l1{
+			top: $fr4line1Top;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr4line2Top;
+		}
+		&-l3{
+			top: $fr4line3Top;
+		}
+	}
+	&-terms{}
+}
+.fr-f4 {
 	&-slide {
 		height: 1500px;
 		width: 1500px;
@@ -182,22 +198,7 @@ $fr4line3Top:25px;
 		}
 	}
 }
-.fr-f4 {
-	&-lines {
-		&-l1{
-			top: $fr4line1Top;
-		}
-		&-l2{
-			padding: 5px 0;
-			text-shadow: $acc3-color 0 0 5px;
-			top: $fr4line2Top;
-		}
-		&-l3{
-			top: $fr4line3Top;
-		}
-	}
-	&-terms{}
-}
+
 
 .cta-btn {
 	font-size: 20px;
