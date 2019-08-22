@@ -10,13 +10,14 @@ sizes:
       line2: Just added
     frame02:
       line1: 100,000
-      line2: give away
+      line2: give
+      line3: away
     frame03:
       line1: Did you win
       line2: Your share of
       line3: 100,000
     frame04:
-      line1: Are you our next
+      line1: Are you </br>our next
       line2: Cosmic Fortune
       line3: Winner
   300x250:

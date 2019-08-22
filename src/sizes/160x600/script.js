@@ -4,17 +4,6 @@ require('@160x600/style.scss');
 import { TweenLite, TimelineMax} from 'gsap';
 
 
-// // Frame 1 Content
-// var devDynamicContent = {};
-// 	devDynamicContent.frameOne = [{}];
-// 	devDynamicContent.frameOne[0].line1 = 'Register test test and get';
-// 	devDynamicContent.frameOne[0].line2 = '10 Free dude dude Spins';
-// 	devDynamicContent.frameOne[0].line3 = 'No Deposit Required';
-// 	devDynamicContent.frameOne[0].cta = 'Register Now';
-
-
-
-
 // Broadcast Events shim
 // ====================================================================================================
 (function() {
@@ -75,6 +64,8 @@ var timeline = (function MasterTimeline() {
 
 		var frlogo = nest('.fr-logo'),
 			fr01 = nest('.fr-f1'),
+			fr01gameCard1 = nest('.game-card.one'),
+			fr01gameCard2 = nest('.game-card.two'),
 			fr01Line1 = nest('.fr-f1-lines-l1'),
 			fr01Line2 = nest('.fr-f1-lines-l2'),
 			fr01Providers = nest('.fr-f1-providers'),
@@ -121,6 +112,10 @@ var timeline = (function MasterTimeline() {
 			tl
 				.from(fr01,0.0, {opacity:1,force3D:true}, 0.1)
 				.from(frlogo, frSD, {opacity:1, ease:Elastic.easeOut.config(2, 1)}, 0.2)
+				.from(fr01gameCard1, frSD, {rotation:90, scale: 0.6,  opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.2)
+				.from(fr01gameCard2, frSD, {rotation:90, scale: 0.4, opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.3)
+
+
 				.from(fr01Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},0.2)
 				.from(fr01Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)}, 0.3)
 				.from(fr01Providers, frSD, {opacity:0,  ease:Elastic.easeOut.config(2, 1)}, 0.4)
@@ -170,7 +165,7 @@ var timeline = (function MasterTimeline() {
 				.from(fr04Toon,frSD, {opacity:0,scale: 1.5, transformOrigin:"50% 50%", ease:Power4.easeOut}, 0.7)
 				.from(fr04Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.7)
 				.from(fr04Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.8)
-				.from(fr04Line3, frSD, {opacity:0, y: 20, ease:Elastic.easeOut.config(2, 1)},  0.9);
+				.from(fr04Line3, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.9);
 
 
 			return tl;
@@ -186,7 +181,7 @@ var timeline = (function MasterTimeline() {
 
 		// DEBUG:
 		// tl.pause('frame1+=0.8'); // start playing at label:frame3
-		// tl.pause('frame2+=2.5'); // pause the timeline at label:frame3
+		// tl.pause('frame2+=2.8'); // pause the timeline at label:frame3
 		// tl.pause('frame3+=1.8'); // pause the timeline at label:frame3
 		// tl.pause('frame4+=1.5'); // pause the timeline at label:frame3
 		// tl.pause('frame1=0.2'); // pause the timeline at label:frame3

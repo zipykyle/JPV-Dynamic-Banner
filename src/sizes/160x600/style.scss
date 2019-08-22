@@ -17,9 +17,9 @@ $fr3line2Top:250px;
 $fr3line3Top:320px;
 $fr3ProvidersTop:200px;
 
-$fr4line1Top:145px;
-$fr4line2Top:220px;
-$fr4line3Top:340px;
+$fr4line1Top:115px;
+$fr4line2Top:170px;
+$fr4line3Top:255px;
 
 .coin-fall {
 	background-size:  240px 600px ;
@@ -35,6 +35,64 @@ $fr4line3Top:340px;
 
 
 .fr-f1 {
+	.game-card {
+		&.one {
+			top: 290px;
+			transform: scale(0.9) rotate(-35deg);
+			left: 20px;
+		}
+		&.two {
+			top: 290px;
+			left: 20px;
+			transform: rotate(-15deg);
+		}
+
+		$gcW:120px;
+		$gcH:140px;
+		background-color: #292828;
+		border-radius: 5px;
+		width: $gcW;
+		height: $gcH;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		overflow: hidden;
+		&-label {
+			box-shadow: #303030 0 2px 4px;
+			position: absolute;
+			width: $gcW;
+			height: 25px;
+			transform: rotate(45deg);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #EDBC58;
+			top: 8px;
+			right: -37px;
+			span {
+				font-weight: bold;
+				font-size: 13px;
+			}
+		}
+		&-thumb {
+			display: flex;
+			border-radius: 100%;
+			background-color: #292828;
+			border:3px solid #444242;
+			width: $gcW/1.2;
+			height: $gcW/1.2;
+			overflow: hidden;
+			justify-content: center;
+			align-content: center;
+			img {
+				width: 120%;
+				height: auto;
+			}
+
+		}
+	}
 
 	&-lines {
 		&-l1{
@@ -55,30 +113,30 @@ $fr4line3Top:340px;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		bottom: 47px;
+		bottom: 51px;
 		transform: scale(0.8);
 		.logo1, .logo2, .logo3 {
 			display: flex;
 		}
 		.logo1 {
-			background: no-repeat url("jpv-char-160x600.png") 0 0;
-			width: 120px;
+			background: no-repeat url("jpv-char-160x600.png") -22px 0;
+			width: 118px;
 			height: 34px;
-			background-size: 120px 333px;
+			background-size: 160px 360px;
 		}
 		.logo2 {
-			background: no-repeat url("jpv-char-160x600.png") 0 -34px;
+			background: no-repeat url("jpv-char-160x600.png") -22px -34px;
 			width: 120px;
 			height: 29px;
-			background-size: 120px 333px;
+			background-size: 160px 360px;
 			margin: 4px 0;
 
 		}
 		.logo3 {
-			background: no-repeat url("jpv-char-160x600.png") 0 -65px;
+			background: no-repeat url("jpv-char-160x600.png") -22px -65px;
 			width: 120px;
-			height: 37px;
-			background-size: 120px 333px;
+			height: 41px;
+			background-size: 160px 360px;
 
 		}
 	}
@@ -118,14 +176,25 @@ $fr4line3Top:340px;
 	&-lines {
 		&-l1{
 			top: $fr3line1Top;
+			transform: rotate(-54deg);
+			left: -15px;
 		}
 		&-l2{
 			padding: 5px 0;
 			text-shadow: $acc3-color 0 0 5px;
 			top: $fr3line2Top;
+			left: -19px;
+			transform: rotate(-54deg);
+
 		}
 		&-l3{
 			top: $fr3line3Top;
+			transform: rotate(-54deg);
+			left: -15px;
+			font-weight: bold;
+			small {
+				font-size: 12px;
+			}
 		}
 	}
 	&-terms{}
@@ -164,12 +233,12 @@ $fr4line3Top:340px;
 	}
 	&-toon {
 		background: no-repeat url("jpv-char-160x600.png") bottom center;
-		background-size: cover;
-		width: 101px;
-		height: 179px;
+		background-size: 160px 360px;
+		width: 160px;
+		height: 225px;
 		position: absolute;
 		right: 0;
-		bottom: 0;
+		bottom:60px;
 		display: block;
 	}
 	&-lines {
