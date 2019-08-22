@@ -10,15 +10,15 @@ $fr1line3Top:58px;
 
 $fr2line1Top:5px;
 $fr2line2Top:25px;
-$fr2line3Top:27px;
 
-$fr3line1Top:18px;
-$fr3line2Top:8px;
-$fr3line3Top:25px;
 
-$fr4line1Top:25px;
+$fr3line1Top:5px;
+$fr3line2Top:25px;
+$fr3line3Top:55px;
+
+$fr4line1Top:5px;
 $fr4line2Top:25px;
-$fr4line3Top:25px;
+$fr4line3Top:63px;
 
 
 .fr-logo {
@@ -71,74 +71,15 @@ $fr4line3Top:25px;
 .fr-f2 {
 	&-lines {
 		&-l1{
-			top: $fr4line1Top;
-		}
-		&-l2{
-			padding: 5px 0;
-			text-shadow: $acc3-color 0 0 5px;
-			top: $fr4line2Top;
-		}
-		&-l3{
-			top: $fr4line3Top;
-		}
-	}
-	&-terms{}
-}
-.fr-f4 {
-	&-slide {
-		height: 1500px;
-		width: 1500px;
-		position: relative;
-		display: block;
-		top: 0;
-		left: 0;
-		@include opacityFix(100, 1);
-		transform: rotate(45deg);
-
-
-		&-cube {
-			background-color: $acc2-color;
-			position: absolute;
-			height: 1500px;
-			width: 1500px;
-			left: -950px;
-			@include opacityFix(0, 0);
-		}
-
-	}
-	&-bg {
-		background: #EDBC58 repeat-y url("jpv-bg2-728x90.jpg") top right;
-		height: 100%;
-		width: 100%;
-		display: block;
-		position: absolute;
-		background-size:  728px $banHeight ;
-		top: 0;
-		left: 0;
-	}
-	&-toon {
-		background: no-repeat url("jpv-char-728x90.png") 0 0;
-		background-size: cover;
-		width: 149px;
-		height: 90px;
-		position: absolute;
-		top:0;
-		left: -55px;
-		margin: 0 0 0 0;
-		display: block;
-	}
-	&-lines {
-		&-l1{
 			top: $fr2line1Top;
 		}
 		&-l2{
+			font-weight: bold;
 			padding: 5px 0;
 			text-shadow: $acc3-color 0 0 5px;
 			top: $fr2line2Top;
 		}
-		&-l3{
-			top: $fr2line3Top;
-		}
+
 	}
 	&-terms{}
 }
@@ -198,7 +139,64 @@ $fr4line3Top:25px;
 		}
 	}
 }
+.fr-f4 {
+	&-slide {
+		height: 1500px;
+		width: 1500px;
+		position: relative;
+		display: block;
+		top: 0;
+		left: 0;
+		@include opacityFix(100, 1);
+		transform: rotate(45deg);
 
+
+		&-cube {
+			background-color: $acc2-color;
+			position: absolute;
+			height: 1500px;
+			width: 1500px;
+			left: -950px;
+			@include opacityFix(0, 0);
+		}
+
+	}
+	&-bg {
+		background: #EDBC58 repeat-y url("jpv-bg2-728x90.jpg") top right;
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: absolute;
+		background-size:  728px $banHeight ;
+		top: 0;
+		left: 0;
+	}
+	&-toon {
+		background: no-repeat url("jpv-char-728x90.png") 0 0;
+		background-size: 250px 90px;
+		width: 75px;
+		height: 90px;
+		position: absolute;
+		top:0;
+		left: -10px;
+		margin: 0 0 0 0;
+		display: block;
+	}
+	&-lines {
+		&-l1{
+			top: $fr4line1Top;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr4line2Top;
+		}
+		&-l3{
+			top: $fr4line3Top;
+		}
+	}
+	&-terms{}
+}
 
 .cta-btn {
 	font-size: 20px;

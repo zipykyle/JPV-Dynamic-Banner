@@ -3,18 +3,6 @@ require('@728x90/style.scss');
 
 import { TweenLite, TimelineMax} from 'gsap';
 
-
-// // Frame 1 Content
-// var devDynamicContent = {};
-// 	devDynamicContent.frameOne = [{}];
-// 	devDynamicContent.frameOne[0].line1 = 'Register test test and get';
-// 	devDynamicContent.frameOne[0].line2 = '10 Free dude dude Spins';
-// 	devDynamicContent.frameOne[0].line3 = 'No Deposit Required';
-// 	devDynamicContent.frameOne[0].cta = 'Register Now';
-
-
-
-
 // Broadcast Events shim
 // ====================================================================================================
 (function() {
@@ -81,7 +69,6 @@ var timeline = (function MasterTimeline() {
 			fr03 = nest('.fr-f3'),
 			fr03Line1 = nest('.fr-f3-lines-l1'),
 			fr03Line2 = nest('.fr-f3-lines-l2'),
-			fr03Line3 = nest('.fr-f3-lines-l3'),
 			fr03Cta = nest('.fr-f3 .cta-btn'),
 
 			fr04 = nest('.fr-f4'),
@@ -92,7 +79,6 @@ var timeline = (function MasterTimeline() {
 			fr04Line2 = nest('.fr-f4-lines-l2'),
 			fr04Line3 = nest('.fr-f4-lines-l3'),
 			fr04Cta = nest('.fr-f4 .cta-btn');
-
 
 
 
@@ -142,7 +128,6 @@ var timeline = (function MasterTimeline() {
 				.from(fr03,0.0, {opacity:1}, 0.3)
 				.from(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.4)
 				.from(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.5)
-				.from(fr03Line3, frSD, {opacity:0,scale:0.09, ease:Elastic.easeOut.config(2, 1)},0.6);
 			return tl;
 		}
 
@@ -176,9 +161,9 @@ var timeline = (function MasterTimeline() {
 
 		// DEBUG:
 		// tl.play('frame2+=0'); // start playing at label:frame3
-		// tl.pause('frame2+=2.5'); // pause the timeline at label:frame3
+		//  tl.pause('frame2+=2.5'); // pause the timeline at label:frame3
 		// tl.pause('frame3+=1.8'); // pause the timeline at label:frame3
-		// tl.pause('frame4+=0.0'); // pause the timeline at label:frame3
+		// tl.pause('frame4+=1.9'); // pause the timeline at label:frame3
 		// tl.pause('frame1=0.2'); // pause the timeline at label:frame3
 	}
 
