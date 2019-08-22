@@ -120,6 +120,7 @@ var timeline = (function MasterTimeline() {
 		}
 		
 		function sceneTwo(){
+			//100,000kr give away
 			var tl = new TimelineMax();
 			tl
 				.to(fr01,0.0, {opacity:0,force3D:true}, 0.0)
@@ -127,14 +128,14 @@ var timeline = (function MasterTimeline() {
 				.from(fr02Cta, frSD, {opacity:1}, 0.1)
 				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.2)
 				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.3)
-				.to(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 1.6)
-				.to(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 1.8);
+				.to(fr02Line1, frSD, {x: -50, opacity:0, ease:Elastic.easeOut.config(2, 1)}, 1.6)
+				.to(fr02Line2, frSD, {x: 50, opacity:0, ease:Elastic.easeOut.config(2, 1)}, 1.7);
 			
 			return tl;
 		}
 		
 		function sceneThree(){
-			// Choose from 1200+ games
+			// Did you win Your share of 100,000
 			var tl = new TimelineMax();
 			tl
 				.to(fr02,0.0, {opacity:0,force3D:true}, 0.0)
@@ -143,7 +144,11 @@ var timeline = (function MasterTimeline() {
 				.from(fr03,0.0, {opacity:1}, 0.3)
 				.from(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.4)
 				.from(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.5)
-				.from(fr03Line3, frSD, {opacity:0,scale:0.09, ease:Elastic.easeOut.config(2, 1)},0.6);
+				.from(fr03Line3, frSD, {opacity:0,scale:0.09, ease:Elastic.easeOut.config(2, 1)},0.6)
+				.to(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 1.6)
+				.to(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 1.7)
+				.to(fr03Line3, frSD, {opacity:0,scale:0.09, ease:Elastic.easeOut.config(2, 1)},1.8);
+
 			return tl;
 		}
 		
@@ -174,14 +179,16 @@ var timeline = (function MasterTimeline() {
 			.add(sceneOne(), 'frame1+=0.0')
 			.add(sceneTwo(),'frame2-=0.4')
 			.add(sceneThree(), 'frame3-=0.4')
-			.add(sceneFour(), 'frame4+=0');
+			.add(sceneFour(), 'frame4-=0.4');
 		
 		// DEBUG:
 		// tl.play('frame2+=0'); // start playing at label:frame3
 		// tl.pause('frame1=0.2'); // pause the timeline at label:frame3
 		// tl.pause('frame2+=2.5'); // pause the timeline at label:frame3
-		// tl.pause('frame3+=1.8'); // pause the timeline at label:frame3
+		// tl.play('frame4'); // pause the timeline at label:frame3
 		// tl.pause('frame4+=0.0'); // pause the timeline at label:frame3
+
+
 
 	}
 	
@@ -226,7 +233,7 @@ timeline.init();
 	var maxAnimationTime = 30;
 	
 	function stopAnimation(){
-		tl.pause('frame1+=0.9');
+		tl.pause('frame1+=1.5');
 	};
 	
 	TweenLite.delayedCall(maxAnimationTime, stopAnimation);
