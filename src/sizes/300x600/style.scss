@@ -13,14 +13,14 @@ $fr2line2Top:260px;
 $fr2line3Top:300px;
 
 
-$fr3line1Top:185px;
+$fr3line1Top:220px;
 $fr3line2Top:250px;
-$fr3line3Top:320px;
+$fr3line3Top:290px;
 $fr3ProvidersTop:200px;
 
-$fr4line1Top:115px;
-$fr4line2Top:170px;
-$fr4line3Top:255px;
+$fr4line1Top:100px;
+$fr4line2Top:135px;
+$fr4line3Top:180px;
 
 .coin-fall {
 	background-size:  300px 600px ;
@@ -223,10 +223,11 @@ $fr4line3Top:255px;
 		background: no-repeat url("jpv-char-300x600.png") bottom center;
 		background-size: 167px 395px;
 		width: 300px;
-		height: 225px;
+		height: 280px;
 		position: absolute;
-		right: 0;
-		bottom:60px;
+		right:auto;
+		left: 20px;
+		bottom:65px;
 		display: block;
 	}
 	&-lines {

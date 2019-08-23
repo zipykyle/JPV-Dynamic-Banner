@@ -166,11 +166,12 @@ var timeline = (function MasterTimeline() {
 				.from(fr04Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.8)
 				.from(fr04Line3, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},  0.9)
 
-				.to(fr04Cta, frSD, {scale:0.1 ,opacity:0, ease:Elastic.easeOut.config(1, 0.3)},  1.9)
-				.to(fr04Line1, frSD, {scale: 0.1, opacity:0, ease:Elastic.easeOut.config(2, 1)},  2.1)
-				.to(fr04Line2, frSD, {scale: 0.1, opacity:0, ease:Elastic.easeOut.config(2, 1)},  2.2)
-				.to(fr04Line3, frSD, {scale: 0.1, opacity:0, ease:Elastic.easeOut.config(2, 1)},  2.2)
-				.to(fr04Toon,frSD, {scale: 0.8,opacity:0,  transformOrigin:"50% 50%", ease:Power4.easeOut}, 2.3);
+
+				.to(fr04Line1, frSD, {scale: 0.1, opacity:0, ease:Elastic.easeOut.config(2, 1)},  2.6)
+				.to(fr04Line2, frSD, {scale: 0.1, opacity:0, ease:Elastic.easeOut.config(2, 1)},  2.7)
+				.to(fr04Line3, frSD, {scale: 0.1, opacity:0, ease:Elastic.easeOut.config(2, 1)},  2.8)
+				.to(fr04Toon,frSD, {scale: 0.8,opacity:0,  transformOrigin:"50% 50%", ease:Power4.easeOut}, 2.9)
+				.to(fr04Cta, frSD, {scale:0.1 ,opacity:0, ease:Elastic.easeOut.config(1, 0.3)},  2.9);
 
 
 			return tl;
@@ -186,9 +187,9 @@ var timeline = (function MasterTimeline() {
 
 		// DEBUG:
 		// tl.pause('frame1+=1.5'); // start playing at label:frame3
-		tl.pause('frame2+=0.4'); // pause the timeline at label:frame3
+		// tl.pause('frame2+=0.4'); // pause the timeline at label:frame3
 		// tl.pause('frame3+=1.8'); // pause the timeline at label:frame3
-		// tl.play('frame4'); // pause the timeline at label:frame3
+		// tl.pause('frame4+=1.8'); // pause the timeline at label:frame3
 		// tl.pause('frame1=0.2'); // pause the timeline at label:frame3
 	}
 
