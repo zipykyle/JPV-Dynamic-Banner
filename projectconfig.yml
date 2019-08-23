@@ -86,7 +86,7 @@ sizes:
   120x600:
     link: https://www.jackpotvillage.com/
     frame01:
-      line1: New games
+      line1: New </br> games
       line2: Just added
     frame02:
       line1: 100,000
@@ -97,7 +97,7 @@ sizes:
       line2: Your share of
       line3: 100,000
     frame04:
-      line1: Are you our next
+      line1: Are you </br>our next
       line2: Cosmic Fortune
       line3: Winner
   468x90:
