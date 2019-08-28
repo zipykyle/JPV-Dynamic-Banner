@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06f9803f-2f88-47d3-b7d0-f8a5e2042b06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/02_thumb_cosmicfortune.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/NYXHITITBIG.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectconfig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/projectconfig.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/jpv-char-320x50.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/jpv-char-350x50.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +95,7 @@
       <workItem from="1566557977728" duration="8311000" />
       <workItem from="1566900310716" duration="614000" />
       <workItem from="1566904417641" duration="7413000" />
-      <workItem from="1566978784192" duration="3572000" />
+      <workItem from="1566978784192" duration="4320000" />
     </task>
     <servers />
   </component>
