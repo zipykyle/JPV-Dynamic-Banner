@@ -1,7 +1,7 @@
 require('@project/styles/global.scss');
 require('@468x90/style.scss');
 
-import { TweenLite, TimelineMax} from 'gsap';
+// import { TweenLite, TimelineMax} from 'gsap';
 
 // Broadcast Events shim
 // ====================================================================================================
@@ -111,11 +111,13 @@ var timeline = (function MasterTimeline() {
 		function sceneTwo(){
 			var tl = new TimelineMax();
 			tl
-				.to(fr01,0.0, {opacity:0,force3D:true}, 0.3)
-				.from(fr02,0.0, {opacity:0,force3D:true}, 0.4)
-				.from(fr02Cta, frSD, {opacity:1}, 0.6)
-				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.7)
-				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.8);
+				.to(fr01,0.0, {opacity:0,force3D:true}, 0.0)
+				.from(fr02,0.0, {opacity:0,force3D:true}, 0.0)
+				.from(fr02Cta, frSD, {opacity:1}, 0.1)
+				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.2)
+				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.3)
+				.to(fr02Line1, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 1.6)
+				.to(fr02Line2, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 1.8);
 
 			return tl;
 		}
@@ -124,16 +126,15 @@ var timeline = (function MasterTimeline() {
 			// Did you win your share of 100,000
 			var tl = new TimelineMax();
 			tl
-				.to(fr02,0.0, {opacity:0,force3D:true}, 0.3)
-				.to(fr02Line1, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.0)
-				.to(fr02Line2, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.1)
+				.to(fr02,0.0, {opacity:0,force3D:true}, 0.0)
+				.from(fr03,0.0, {opacity:1}, 0.0)
+				.from(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.0)
+				.from(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.1)
+				.to(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 1.5)
+				.to(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 1.6)
+				.from(fr03Line3, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 1.6)
+				.to(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 2.6);
 
-				.from(fr03,0.0, {opacity:1}, 0.3)
-				.from(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.4)
-				.from(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.5)
-				.to(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 1.8)
-				.to(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 1.9)
-				.from(fr03Line3, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 1.9)
 
 			return tl;
 		}
@@ -166,14 +167,14 @@ var timeline = (function MasterTimeline() {
 
 		tl
 			.add(sceneOne(), 'frame1')
-			.add(sceneTwo(),'frame2+=0.0')
-			.add(sceneThree(), 'frame3+=0.5')
-			.add(sceneFour(), 'frame4');
+			.add(sceneTwo(),'frame2-=0.2')
+			.add(sceneThree(), 'frame3-=0.2')
+			.add(sceneFour(), 'frame4-=0.2');
 
 		// DEBUG:
 		// tl.pause('frame1+=0.6'); // start playing at label:frame3
 		//  tl.pause('frame2+=0.9'); // pause the timeline at label:frame3
-		// tl.pause('frame3+=2.8'); // pause the timeline at label:frame3
+		// tl.pause('frame3+=1.0'); // pause the timeline at label:frame3
 		// tl.pause('frame4+=3.8'); // pause the timeline at label:frame3
 		// tl.pause('frame1=0.2'); // pause the timeline at label:frame3
 	}

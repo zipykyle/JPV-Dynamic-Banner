@@ -113,22 +113,6 @@ let config = {
 							publicPath: './images/',
 							name: '[name].[ext]'
 						}
-					},
-					{
-						loader: 'image-webpack-loader',
-						options: {
-							mozjpeg: {
-								progressive: true,
-								quality: 30
-							},
-							optipng: {
-								enabled: false,
-							},
-							pngquant: {
-								quality: '10-20',
-								speed: 4
-							}
-						}
 					}
 				]
 			}
@@ -236,18 +220,6 @@ Object.keys( projectData.sizes ).forEach( (size)=> {
 				],
 			}),
 
-			new ImageminPlugin({
-				test: /\.(jpe?g|png|gif|svg)$/i,
-				optipng: {
-					optimizationLevel: 9
-				},
-				plugins: [
-					imageminMozjpeg({
-						quality: 60,
-						progressive: true
-					})
-				]
-			})
 
 		],
 		output: {

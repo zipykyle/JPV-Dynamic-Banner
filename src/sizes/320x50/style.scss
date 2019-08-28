@@ -262,3 +262,18 @@ $fr4line3Top:10px;
     }
   }
 }
+
+//refresh override#
+.replay-btn {
+  position: absolute;
+  right: 0px !important;
+  top: 0px !important;;
+  height: 16px;
+  width: 16px;
+  z-index: 55;
+  cursor: pointer;
+  &:hover img {
+    -webkit-animation: rotate-animation 1s infinite linear;
+    animation: rotate-animation 1s infinite linear;
+  }
+}

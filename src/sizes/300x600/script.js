@@ -1,36 +1,25 @@
 require('@project/styles/global.scss');
 require('@300x600/style.scss');
 
-import { TweenLite, TimelineMax} from 'gsap';
+// import { TweenLite, TimelineMax} from 'gsap';
 
 
 // Broadcast Events shim
 // ====================================================================================================
 (function() {
 	if (typeof window.CustomEvent === 'function') { return false; }
-
 	function CustomEvent(event, params) {
 		params = params || { bubbles: false, cancelable: false, detail: undefined };
 		var evt = document.createEvent('CustomEvent');
 		evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
 		return evt;
 	}
-
 	CustomEvent.prototype = window.Event.prototype;
 	window.CustomEvent = CustomEvent;
 })();
 
-
-
-
-
-
 var timeline = (function MasterTimeline() {
-
-
-
 	var tl;
-	var tlBG;
 	var win = window;
 
 	function doClickTag() { window.open(window.clickTag); }
@@ -55,11 +44,6 @@ var timeline = (function MasterTimeline() {
 		//Frame Speed Start Duration
 		var frSD = 1.0;
 
-		//Frame Speed Out Duration
-		var frSOD = 0.5;
-
-		var frameStart = 0.0;
-
 		var bgCoins = nest('.coin-fall');
 
 		var frlogo = nest('.fr-logo'),
@@ -80,7 +64,6 @@ var timeline = (function MasterTimeline() {
 			fr03Line1 = nest('.fr-f3-lines-l1'),
 			fr03Line2 = nest('.fr-f3-lines-l2'),
 			fr03Line3 = nest('.fr-f3-lines-l3'),
-			fr03Cta = nest('.fr-f3 .cta-btn'),
 
 			fr04 = nest('.fr-f4'),
 			fr04Cube = nest('.fr-f4-slide-cube'),
@@ -130,11 +113,11 @@ var timeline = (function MasterTimeline() {
 		function sceneTwo(){
 			var tl = new TimelineMax();
 			tl
-				.to(fr01,0.0, {opacity:0,force3D:true}, 0.3)
-				.from(fr02,0.0, {opacity:0,force3D:true}, 0.4)
-				.from(fr02Cta, frSD, {opacity:1}, 0.6)
-				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.7)
-				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.8)
+				.to(fr01,0.0, {opacity:0,force3D:true}, 0.0)
+				.from(fr02,0.0, {opacity:0,force3D:true}, 0.0)
+				.from(fr02Cta, frSD, {opacity:1}, 0.1)
+				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.2)
+				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.3)
 			return tl;
 		}
 
@@ -142,10 +125,10 @@ var timeline = (function MasterTimeline() {
 			// Choose from 1200+ games
 			var tl = new TimelineMax();
 			tl
-				.to(fr02,0.0, {opacity:0,force3D:true}, 0.3)
-				.from(fr03,0.0, {opacity:1}, 0.3)
-				.from(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.4)
-				.from(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.5)
+				.to(fr02,0.0, {opacity:0,force3D:true}, 0.0)
+				.from(fr03,0.0, {opacity:1}, 0.0)
+				.from(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.2)
+				.from(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.4)
 				.from(fr03Line3, frSD, {opacity:0,scale:0.09, ease:Elastic.easeOut.config(2, 1)},0.6);
 			return tl;
 		}

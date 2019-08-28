@@ -1,7 +1,9 @@
 require('@project/styles/global.scss');
 require('@120x600/style.scss');
 
-import { TweenLite, TimelineMax} from 'gsap';
+// import {/* webpackMode: "development" */  TweenLite, TimelineMax} from 'gsap';
+
+
 
 
 // Broadcast Events shim

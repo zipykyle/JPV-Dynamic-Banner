@@ -3,9 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="06f9803f-2f88-47d3-b7d0-f8a5e2042b06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/120x600/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.pack.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +105,7 @@
       <workItem from="1566557977728" duration="8311000" />
       <workItem from="1566900310716" duration="614000" />
       <workItem from="1566904417641" duration="7413000" />
-      <workItem from="1566978784192" duration="4320000" />
+      <workItem from="1566978784192" duration="16116000" />
     </task>
     <servers />
   </component>
@@ -120,7 +130,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/sizes/468x90/script.js</url>
-          <line>161</line>
+          <line>162</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
