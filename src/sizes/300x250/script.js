@@ -139,8 +139,6 @@ var timeline = (function MasterTimeline() {
 			var tl = new TimelineMax();
 			tl
 				.to(fr02,0.0, {opacity:0,force3D:true}, 0.0)
-				.to(fr02Line1, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.0)
-				.to(fr02Line2, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.1)
 				.from(fr03,0.0, {opacity:1}, 0.3)
 				.from(fr03Line1, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.4)
 				.from(fr03Line2, frSD, {opacity:0, scale:0.09, ease:Elastic.easeOut.config(2, 1)}, 0.5)

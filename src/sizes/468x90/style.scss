@@ -4,37 +4,37 @@ $banHeight: 90px;
 
 $ctaPosBot: 30px;
 
-$fr1line1Top:5px;
-$fr1line2Top:58px;
-$fr1line3Top:58px;
+$fr1line1Top:15px;
+$fr1line2Top:40px;
+$fr1line3Top:28px;
 
-$fr2line1Top:25px;
-$fr2line2Top:22px;
-$fr2line3Top:37px;
+$fr2line1Top:15px;
+$fr2line2Top:40px;
 
-$fr3line1Top:18px;
-$fr3line2Top:22px;
-$fr3line3Top:10px;
 
-$fr4line1Top:25px;
-$fr4line2Top:25px;
-$fr4line3Top:25px;
+$fr3line1Top:15px;
+$fr3line2Top:40px;
+$fr3line3Top:28px;
+
+$fr4line1Top:15px;
+$fr4line2Top:40px;
+$fr4line3Top:28px;
 
 
 .fr-logo {
-	display: block;
-	width: 90px;
-	position: absolute;
 	background: no-repeat url("~@images/jpv-logo.svg") center center;
-	height: 55px;
+	display: block;
+	width: 95px;
+	position: absolute;
+	height: 50px;
 	top: 15px;
-	left: 15px;
+	left: 12px;
 	background-size: contain;
 }
 
 
 .coin-fall {
-	background-size:  728px 90px ;
+	background-size:  728px 50px ;
 	background: $acc1-color repeat-y url("jpv-bg-468x90.jpg") 0 0;
 	position: absolute;
 	z-index: 0;
@@ -52,27 +52,117 @@ $fr4line3Top:25px;
 		&-l1{
 			z-index: 3;
 			top: $fr1line1Top;
+			left: 111px;
 			right: auto;
-			left: 125px;
+			width: 222px;
 		}
 		&-l2{
 			z-index: 4;
 			padding: 5px 0;
 			text-shadow: $acc3-color 0 0 5px;
 			top: $fr1line2Top;
+			left: 111px;
 			right: auto;
-			left: 152px;
+			width: 222px;
 		}
 		&-l3{
-			right: auto;
-			left: 152px;
 			z-index: 5;
+			@extend %center;
 			top: $fr1line3Top;
+				left: 111px;
+			right: auto;
+			width: 222px;
 		}
 	}
 
 }
 .fr-f2 {
+	&-lines {
+		&-l1{
+			top: $fr2line1Top;
+				left: 111px;
+			right: auto;
+			width: 222px;
+		}
+		&-l2{
+				left: 111px;
+			right: auto;
+			width: 222px;
+			font-weight: bold;
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr2line2Top;
+		}
+
+	}
+	&-terms{}
+}
+.fr-f3 {
+	&-lines {
+		&-l1{
+			top: $fr3line1Top;
+				left: 111px;
+			right: auto;
+			width: 222px;
+		}
+		&-l2{
+			padding: 5px 0;
+			text-shadow: $acc3-color 0 0 5px;
+			top: $fr3line2Top;
+				left: 111px;
+			right: auto;
+			width: 222px;
+
+		}
+		&-l3{
+			top: $fr3line3Top;
+				left: 111px;
+			right: auto;
+			width: 222px;
+		}
+	}
+	&-providers {
+
+		position: absolute;
+		width: 400px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		transform: scale(0.9);
+		align-items: center;
+		.logo1, .logo2, .logo3 {
+			display: flex;
+		}
+		.logo1 {
+			background: no-repeat url("jpv-char-468x90.png") -148px -64px;
+			width: 124px;
+			height: 27px;
+			background-size: 355px 90px;
+
+		}
+		//playn go
+		.logo2 {
+			background: no-repeat url("jpv-char-468x90.png") -148px 0 ;
+			width: 88px;
+			height: 23px;
+			background-size: 355px 90px;
+
+		}
+		//netent
+		.logo3 {
+			background: no-repeat url("jpv-char-468x90.png") -272px 0 ;
+			width: 124px;
+			height: 45px;
+			background-size: 355px 90px;
+
+		}
+	}
+}
+.fr-f4 {
 	&-slide {
 		height: 1500px;
 		width: 1500px;
@@ -106,110 +196,35 @@ $fr4line3Top:25px;
 	}
 	&-toon {
 		background: no-repeat url("jpv-char-468x90.png") 0 0;
-		background-size: cover;
-		width: 149px;
+		background-size: 355px 90px;
+		width: 120px;
 		height: 90px;
 		position: absolute;
 		top:0;
-		left: -55px;
+		left: -10px;
 		margin: 0 0 0 0;
 		display: block;
 	}
 	&-lines {
 		&-l1{
-			top: $fr2line1Top;
-			left: 125px;
-			right: auto;
-		}
-		&-l2{
-			padding: 5px 0;
-			text-shadow: $acc3-color 0 0 5px;
-			top: $fr2line2Top;
-			left: 127px;
-			right: auto;
-		}
-		&-l3{
-			top: $fr2line3Top;
-			left: 100px;
-			right: auto;
-		}
-	}
-	&-terms{}
-}
-.fr-f3 {
-	&-lines {
-		&-l1{
-			top: $fr3line1Top;
-			left: 147px;
-			right: auto;
-		}
-		&-l2{
-			padding: 5px 0;
-			text-shadow: $acc3-color 0 0 5px;
-			top: $fr3line2Top;
-			left: 95px;
-			right: auto;
-
-		}
-		&-l3{
-			top: $fr3line3Top;
-		}
-	}
-	&-providers {
-
-		position: absolute;
-		width: 400px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		bottom: 0;
-		left: 15px;
-		right: auto;
-		margin: 0 auto;
-		transform: scale(0.6);
-		align-items: center;
-		.logo1, .logo2, .logo3 {
-			display: flex;
-		}
-		.logo1 {
-			background: no-repeat url("jpv-char-468x90.png") -148px -64px;
-			width: 124px;
-			height: 27px;
-			background-size: 355px 90px;
-
-		}
-		//playn go
-		.logo2 {
-			background: no-repeat url("jpv-char-468x90.png") -148px 0 ;
-			width: 88px;
-			height: 23px;
-			background-size: 355px 90px;
-
-		}
-		//netent
-		.logo3 {
-			background: no-repeat url("jpv-char-468x90.png") -272px 0 ;
-			width: 124px;
-			height: 45px;
-			background-size: 355px 90px;
-
-		}
-	}
-}
-.fr-f4 {
-	&-lines {
-		&-l1{
 			top: $fr4line1Top;
+			left: 111px;
+			right: auto;
+			width: 222px;
 		}
 		&-l2{
 			padding: 5px 0;
 			text-shadow: $acc3-color 0 0 5px;
 			top: $fr4line2Top;
-			left: 119px;
+			left: 111px;
 			right: auto;
+			width: 222px;
 		}
 		&-l3{
 			top: $fr4line3Top;
+			left: 111px;
+			right: auto;
+			width: 222px;
 		}
 	}
 	&-terms{}
@@ -219,12 +234,12 @@ $fr4line3Top:25px;
 	font-size: 18px;
 	max-width: 120px;
 	border-radius: 50px;
-	padding: 5px 0;
-	bottom: 25px;
+	padding: 4px 0;
+	bottom: 35px;
 	left: auto;
-	right: 10px;
 	position: absolute;
 	margin: 0 0 !important;
+	right: 15px;
 }
 
 .fr {
@@ -236,13 +251,13 @@ $fr4line3Top:25px;
 			font-size: 10px;
 			color: $acc3-color;
 			position: absolute;
-			bottom: 0;
+			bottom: 10px;
 			left: auto;
-			right: 0px;
+			right: 32px;
 			margin: 0 0;
 			align-items: center;
 			height: 20px;
-			width: 150px;
+			width: 95px;
 			text-align: center;
 		}
 	}
