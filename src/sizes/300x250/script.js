@@ -73,9 +73,6 @@ var timeline = (function MasterTimeline() {
 			fr04Line3 = nest('.fr-f4-lines-l3'),
 			fr04Cta = nest('.fr-f4 .cta-btn');
 
-
-
-
 		function sceneOne(){
 			var tlBG = new TimelineMax({repeat: -1});
 			tlBG.to(bgCoins, 25, {

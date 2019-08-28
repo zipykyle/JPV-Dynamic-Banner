@@ -64,6 +64,7 @@ var timeline = (function MasterTimeline() {
 			fr03Line1 = nest('.fr-f3-lines-l1'),
 			fr03Line2 = nest('.fr-f3-lines-l2'),
 			fr03Line3 = nest('.fr-f3-lines-l3'),
+			fr03Cta = nest('.fr-f3 .cta-btn'),
 
 			fr04 = nest('.fr-f4'),
 			fr04Cube = nest('.fr-f4-slide-cube'),
@@ -73,9 +74,6 @@ var timeline = (function MasterTimeline() {
 			fr04Line2 = nest('.fr-f4-lines-l2'),
 			fr04Line3 = nest('.fr-f4-lines-l3'),
 			fr04Cta = nest('.fr-f4 .cta-btn');
-
-
-
 
 		function sceneOne(){
 			var tlBG = new TimelineMax({repeat: -1});
@@ -98,9 +96,8 @@ var timeline = (function MasterTimeline() {
 				.from(fr01Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)}, 0.3)
 				.from(fr01gameCard1, frSD, {rotation:90, scale: 0.6,  opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.4)
 				.from(fr01gameCard2, frSD, {rotation:90, scale: 0.4, opacity:0, ease:Elastic.easeOut.config(2, 1)}, 0.8)
-				.from(fr01Providers, frSD, {opacity:0,  ease:Elastic.easeOut.config(2, 1)}, 1.4)
 				.from(fr01Cta, frSD, {scale:0.1 ,opacity:0,  ease:Elastic.easeOut.config(1, 0.3)}, 1.0)
-
+				.from(fr01Providers, frSD, {opacity:0,  ease:Elastic.easeOut.config(2, 1)}, 1.4)
 				.to(fr01Line1, frSD, { scale: 0.1, opacity:0, ease:Elastic.easeOut.config(2, 1)},2.0)
 				.to(fr01Line2, frSD, { scale: 0.1, opacity:0, ease:Elastic.easeOut.config(2, 1)}, 2.2)
 				.to(fr01gameCard1, frSD, {rotation:90, scale: 0.6,  opacity:0, ease:Elastic.easeOut.config(2, 1)}, 2.2)
@@ -113,9 +110,9 @@ var timeline = (function MasterTimeline() {
 		function sceneTwo(){
 			var tl = new TimelineMax();
 			tl
-				.to(fr01,0.0, {opacity:0,force3D:true}, 0.0)
-				.from(fr02,0.0, {opacity:0,force3D:true}, 0.0)
-				.from(fr02Cta, frSD, {opacity:1}, 0.1)
+				.to(fr01,0.0, {opacity:0,force3D:true}, 0.1)
+				.from(fr02,frSD, {opacity:0,force3D:true}, 0.2)
+				.from(fr02Cta, frSD, {opacity:1}, 0.3)
 				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.2)
 				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.3)
 			return tl;
@@ -168,12 +165,6 @@ var timeline = (function MasterTimeline() {
 			.add(sceneThree(), 'frame3+=0')
 			.add(sceneFour(), 'frame4');
 
-		// DEBUG:
-		// tl.pause('frame1+=1.5'); // start playing at label:frame3
-		// tl.pause('frame2+=0.4'); // pause the timeline at label:frame3
-		// tl.pause('frame3+=1.8'); // pause the timeline at label:frame3
-		// tl.pause('frame4+=1.8'); // pause the timeline at label:frame3
-		// tl.pause('frame1=0.2'); // pause the timeline at label:frame3
 	}
 
 	function updateStart() {
