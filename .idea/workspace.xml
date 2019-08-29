@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06f9803f-2f88-47d3-b7d0-f8a5e2042b06" name="Default Changelist" comment="" />
+    <list default="true" id="06f9803f-2f88-47d3-b7d0-f8a5e2042b06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sizes/120x600/game1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/120x600/game2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/160x600/game1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/160x600/game2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/300x250/game1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/300x250/game2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/300x600/game1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/300x600/game2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/game1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/game2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/468x90/game1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/468x90/game2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/728x90/game1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/728x90/game2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/120x600/02_thumb_cosmicfortune.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/120x600/NYXHITITBIG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/120x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/02_thumb_cosmicfortune.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/NYXHITITBIG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/02_thumb_cosmicfortune.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/NYXHITITBIG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/02_thumb_cosmicfortune.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/NYXHITITBIG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/02_thumb_cosmicfortune.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/NYXHITITBIG.jpg" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,22 +62,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sizes/320x50" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sizes/728x90" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\728x90" />
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\468x90" />
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\320x50" />
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\300x600" />
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\300x250" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\160x600" />
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\320x50" />
-      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\120x600" />
-      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\300x600" />
-      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\160x600" />
-      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\468x90" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -91,7 +121,7 @@
       <workItem from="1566900310716" duration="614000" />
       <workItem from="1566904417641" duration="7413000" />
       <workItem from="1566978784192" duration="16116000" />
-      <workItem from="1567005352057" duration="10427000" />
+      <workItem from="1567005352057" duration="10834000" />
     </task>
     <servers />
   </component>
