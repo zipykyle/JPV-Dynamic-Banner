@@ -96,7 +96,7 @@ let config = {
 						options: {
 							ident: 'postcss',
 							plugins: [
-							require('autoprefixer')()
+								require('autoprefixer')()
 							]
 						}
 					},
@@ -112,22 +112,6 @@ let config = {
 							outputPath: 'images/',
 							publicPath: './images/',
 							name: '[name].[ext]'
-						}
-					},
-					{
-						loader: 'image-webpack-loader',
-						options: {
-							mozjpeg: {
-								progressive: true,
-								quality: 30
-							},
-							optipng: {
-								enabled: false,
-							},
-							pngquant: {
-								quality: '10-20',
-								speed: 4
-							}
 						}
 					}
 				]
@@ -149,9 +133,9 @@ let Exports = [
 		plugins: [
 
 			new CleanWebpackPlugin( path.resolve( __dirname, 'dist' ) ),
-	
+
 			new HtmlWebpackPlugin({
-	
+
 				template: path.resolve( __dirname, `src/landing/index.hbs`),
 				hash: true,
 				inject: true,
@@ -160,15 +144,15 @@ let Exports = [
 				title: projectData.projectname,
 				data: projectData,
 				filename: path.resolve( __dirname, `dist/landing/index.html`)
-	
+
 			}),
-	
+
 			new HtmlWebpackHarddiskPlugin(),
-	
+
 			new MiniCssExtractPlugin({
 				filename: "style.css"
 			}),
-	
+
 			new CopyWebpackPlugin( [
 				{
 					from: path.resolve( __dirname, 'src/index.html'),
@@ -221,7 +205,7 @@ Object.keys( projectData.sizes ).forEach( (size)=> {
 				from: path.resolve( __dirname, `src/sizes/${ size }/screenshot.+(png|jpg|jpeg)`),
 				to: path.resolve( __dirname, `dist/${ size }/screenshot.[ext]`)
 			} ] ),
-			
+
 			new HtmlWebpackExternalsPlugin({
 				externals: [
 					{
@@ -236,18 +220,6 @@ Object.keys( projectData.sizes ).forEach( (size)=> {
 				],
 			}),
 
-			new ImageminPlugin({
-				test: /\.(jpe?g|png|gif|svg)$/i,
-				optipng: {
-					optimizationLevel: 9
-				},
-				plugins: [
-					imageminMozjpeg({
-						quality: 60,
-						progressive: true
-					})
-				]
-			})
 
 		],
 		output: {

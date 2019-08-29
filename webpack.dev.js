@@ -46,8 +46,9 @@ let getHTML = () => {
 		t.chunks = [ `${size}` ];
 		t.inject = true;
 		t.alwaysWriteToDisk = true;
-		t.title = `${size}`;
-		t.bannerSizes = `${size}`;
+		t.title = `${size}`,
+			t.data= projectData,
+			t.bannerSizes = `${size}`;
 		t.filename = path.resolve( __dirname, `dist/${ size }/index.html`);
 
 		html.push(
@@ -55,8 +56,8 @@ let getHTML = () => {
 			new HtmlWebpackPlugin(t),
 
 			new CopyWebpackPlugin( [ {
-			  from: path.resolve( __dirname, `src/sizes/${ size }/screenshot.+(png|jpg|jpeg)`),
-			  to: path.resolve( __dirname, `dist/${ size }/screenshot.[ext]`)
+				from: path.resolve( __dirname, `src/sizes/${ size }/screenshot.+(png|jpg|jpeg)`),
+				to: path.resolve( __dirname, `dist/${ size }/screenshot.[ext]`)
 			} ] )
 		)
 
@@ -100,9 +101,9 @@ let getAlias = ()=> {
 plugins = plugins.concat( // combine plugins // https://webpack.js.org/concepts/plugins/
 
 	[
-		new CleanWebpackPlugin( path.resolve( __dirname, 'dist' ) ) 
+		new CleanWebpackPlugin( path.resolve( __dirname, 'dist' ) )
 	],
-		getHTML(),
+	getHTML(),
 	[
 		new HtmlWebpackHarddiskPlugin(),
 	]
@@ -145,13 +146,13 @@ module.exports = {
 			{
 				test: /\.(jpe?g|png|gif|svg)$/i,
 				use: [
-				  {
-				    loader: 'file-loader',
-				    options: {
-				      outputPath: 'images/',
-				      publicPath: '../images/',
-				    }
-				  },
+					{
+						loader: 'file-loader',
+						options: {
+							outputPath: 'images/',
+							publicPath: '../images/',
+						}
+					},
 				]
 			}
 		],
@@ -171,7 +172,7 @@ module.exports = {
 		publicPath: `/`,
 		port: 9000,
 		historyApiFallback: {
-		  index: `/landing/index.html`
+			index: `/landing/index.html`
 		}
 	},
 
