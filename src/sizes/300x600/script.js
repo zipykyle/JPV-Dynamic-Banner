@@ -115,6 +115,8 @@ var timeline = (function MasterTimeline() {
 				.from(fr02Cta, frSD, {opacity:1}, 0.3)
 				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.2)
 				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.3)
+				.to(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 1.5)
+				.to(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 1.6)
 			return tl;
 		}
 

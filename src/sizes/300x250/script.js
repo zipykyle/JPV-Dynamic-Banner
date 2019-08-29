@@ -88,7 +88,7 @@ var timeline = (function MasterTimeline() {
 			TweenLite.delayedCall(maxAnimationTime, stopAnimation);
 			var tl = new TimelineMax();
 			tl
-				.from(fr01,0.0, {opacity:0,force3D:true}, 0.1)
+				.from(fr01,0.0, {opacity:0,force3D:true}, 0.0)
 				.from(frlogo, frSD, {opacity:1, ease:Elastic.easeOut.config(2, 1)}, 0.2)
 				.from(fr01Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},0.2)
 				.from(fr01Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)}, 0.3)
@@ -114,6 +114,7 @@ var timeline = (function MasterTimeline() {
 				.from(fr02Cta, frSD, {opacity:1}, 0.6)
 				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 0.7)
 				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)}, 0.8)
+
 			return tl;
 		}
 
