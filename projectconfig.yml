@@ -42,7 +42,7 @@ sizes:
       line1: New games
       line2: Just added
     frame02:
-      line1: 100,000 kr
+      line1: 100,000
       line2: give away
     frame03:
       line1: Did you win your share of
@@ -73,7 +73,7 @@ sizes:
       line1: New games
       line2: Just added
     frame02:
-      line1: 100,000 kr
+      line1: 100,000
       line2: give away
     frame03:
       line1: Did you win
@@ -106,7 +106,7 @@ sizes:
       line1: New games
       line2: Just added
     frame02:
-      line1: 100,000 kr
+      line1: 100,000
       line2: give away
     frame03:
       line1: Did you win
