@@ -1,19 +1,7 @@
 require('@project/styles/global.scss');
 require('@300x250/style.scss');
 
-import { TweenLite, TimelineMax} from 'gsap';
-
-
-// // Frame 1 Content
-// var devDynamicContent = {};
-// 	devDynamicContent.frameOne = [{}];
-// 	devDynamicContent.frameOne[0].line1 = 'Register test test and get';
-// 	devDynamicContent.frameOne[0].line2 = '10 Free dude dude Spins';
-// 	devDynamicContent.frameOne[0].line3 = 'No Deposit Required';
-// 	devDynamicContent.frameOne[0].cta = 'Register Now';
-
-
-
+// import { TweenLite, TimelineMax} from 'gsap';
 
 // Broadcast Events shim
 // ====================================================================================================
