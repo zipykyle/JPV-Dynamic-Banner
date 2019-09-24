@@ -113,17 +113,18 @@ $fr2line3Top:65px;
 		display: block;
 	}
 	&-lines {
-		width: 490px;
+		width: 237px;
 		left: 97px;
+
 		&-l1{
 			top: $fr2line1Top;
-			left: -160px;
+			left: -150px;
 
 		}
 		&-l2{
 
 			top: $fr2line2Top;
-			left: -100px;
+			left: -50px;
 
 		}
 		&-l3{
@@ -149,25 +150,24 @@ $fr2line3Top:65px;
 	margin: 0 0 !important;
 }
 
-.fr {
 
+.fr {
 	&-f1, &-f2, &-f3, &-f4 {
-		overflow: hidden;
 		&-terms{
 			display: block;
-			font-size: 12px;
+			font-size: 9px;
 			color: $acc3-color;
 			position: absolute;
-			bottom: 15px;
-			left: auto;
-			right: 15px;
+			bottom: 2px;
+			width: 150px;
 			margin: 0 0;
+			right: 10px !important;
 			align-items: center;
-			height: 15px;
-			width: 120px;
+			height: auto;
 			text-align: center;
-			text-shadow: black 0 0 10px ;
-			font-weight: 700;
+			font-weight: normal;
+			left: auto;
+			text-shadow: black 0 0 2px ;
 		}
 	}
 }

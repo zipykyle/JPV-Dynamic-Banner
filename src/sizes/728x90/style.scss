@@ -148,24 +148,22 @@ $fr2line3Top:65px;
 }
 
 .fr {
-
 	&-f1, &-f2, &-f3, &-f4 {
-		overflow: hidden;
 		&-terms{
 			display: block;
-			font-size: 13px;
+			font-size: 9px;
 			color: $acc3-color;
 			position: absolute;
-			bottom: 15px;
-			left: auto;
-			right: 25px;
+			bottom: 2px;
+			width: 150px;
 			margin: 0 0;
+			right: 10px !important;
 			align-items: center;
-			height: 15px;
-			width: 120px;
+			height: auto;
 			text-align: center;
-			text-shadow: black 0 0 10px ;
-			font-weight: 700;
+			font-weight: normal;
+			left: auto;
+			text-shadow: black 0 0 2px ;
 		}
 	}
 }

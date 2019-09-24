@@ -3,15 +3,15 @@
 $banWidth: 250px;
 $banHeight: 250px;
 
-$ctaPosBot: 25px;
+$ctaPosBot: 35px;
 
 $fr1line1Top:80px;
 $fr1line2Top:115px;
 $fr1line3Top:160px;
 
-$fr2line1Top:80px;
-$fr2line2Top:104px;
-$fr2line3Top:148px;
+$fr2line1Top:75px;
+$fr2line2Top:100px;
+$fr2line3Top:130px;
 
 
 
@@ -112,7 +112,6 @@ $fr2line3Top:148px;
 		}
 		&-l2{
 			padding: 5px 0;
-
 			top: $fr2line2Top;
 		}
 		&-l3{
@@ -126,7 +125,7 @@ $fr2line3Top:148px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-		bottom: 55px;
+		bottom: 65px;
 		.logo1, .logo2, .logo3 {
 			display: flex;
 		}
@@ -162,4 +161,25 @@ $fr2line3Top:148px;
 	border-radius: 50px;
 	padding: 3px 0;
 	bottom: $ctaPosBot;
+}
+
+
+.fr {
+	&-f1, &-f2, &-f3, &-f4 {
+
+		&-terms{
+			display: block;
+			font-size: 10px;
+			color: $acc3-color;
+			position: absolute;
+			bottom: 2px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			align-items: center;
+			height: auto;
+			text-align: center;
+			font-weight: normal;
+		}
+	}
 }

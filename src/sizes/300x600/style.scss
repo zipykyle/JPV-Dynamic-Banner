@@ -2,15 +2,15 @@
 
 $banHeight: 600px;
 
-$ctaPosBot: 30px;
+$ctaPosBot: 45px;
 
 $fr1line1Top:120px;
 $fr1line2Top:190px;
 $fr1line3Top:340px;
 
-$fr2line1Top:85px;
-$fr2line2Top:170px;
-$fr2line3Top:265px;
+$fr2line1Top:105px;
+$fr2line2Top:190px;
+$fr2line3Top:255px;
 
 
 
@@ -130,7 +130,7 @@ $fr2line3Top:265px;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		bottom: 80px;
+		bottom: 105px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
@@ -184,4 +184,25 @@ $fr2line3Top:265px;
 	right: 0;
 	margin: 0 auto;
 	background-size: contain;
+}
+
+
+.fr {
+	&-f1, &-f2, &-f3, &-f4 {
+
+		&-terms{
+			display: block;
+			font-size: 10px;
+			color: $acc3-color;
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			align-items: center;
+			height: auto;
+			text-align: center;
+			font-weight: normal;
+		}
+	}
 }
