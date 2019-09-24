@@ -1,7 +1,7 @@
 require('@project/styles/global.scss');
 require('@300x250/style.scss');
 
-// import { TweenLite, TimelineMax} from 'gsap';
+import { TweenLite, TimelineMax} from 'gsap';
 
 // Broadcast Events shim
 // ====================================================================================================
