@@ -2,22 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06f9803f-2f88-47d3-b7d0-f8a5e2042b06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sizes/120x600/jpv-coin-120x600.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/160x600/jpv-coin-160x600.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/300x250/jpv-coin-300x250.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/300x600/jpv-coin-300x600.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/320x50/jpv-coin-320x50.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/468x90/jpv-coin-468x90.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sizes/728x90/jpv-coin-728x90.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/120x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sizes/120x600/jpv-bg-120x600.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/jpv-bg-120x600.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sizes/120x600/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/jpv-bg-160x600.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/jpv-bg-160x600.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/jpv-bg-300x250.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/jpv-bg-300x250.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/jpv-bg-300x600.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/jpv-bg-300x600.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/jpv-bg2-350x50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/jpv-bg2-350x50.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/jpv-bg2-468x90.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/jpv-bg2-468x90.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/jpv-bg2-728x90.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/jpv-bg2-728x90.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/120x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/styles/ad-base-styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/styles/global-frame.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/styles/global-frame.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/styles/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/styles/vars.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,16 +59,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\728x90" />
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\468x90" />
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\320x50" />
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\300x600" />
+      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\300x250" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\468x90" />
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\160x600" />
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src" />
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes" />
       <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\320x50" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src\sizes\160x600" />
-      <recent name="C:\docker\whg\repos\JPV-Dynamic-Banner\src" />
     </key>
   </component>
   <component name="RunDashboard">

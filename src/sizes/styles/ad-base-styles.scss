@@ -32,7 +32,7 @@ html, body {
 .txt-acc3 {color: $acc3-color;}
 
 .bold {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .h1, .h2, .h3, .h4, .h5 {
@@ -75,6 +75,9 @@ html, body {
 	line-height: 12px;
 }
 
+.txt-shade {
+	text-shadow: black 0 0 10px ;
+}
 
 
 
