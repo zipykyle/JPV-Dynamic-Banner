@@ -5,20 +5,13 @@ $banHeight: 50px;
 $ctaPosBot: 30px;
 
 $fr1line1Top:3px;
-$fr1line2Top:12px;
+$fr1line2Top:15px;
 $fr1line3Top:35px;
 
-$fr2line1Top:13px;
-$fr2line2Top:8px;
-$fr2line3Top:19px;
+$fr2line1Top:3px;
+$fr2line2Top:15px;
+$fr2line3Top:35px;
 
-$fr3line1Top:15px;
-$fr3line2Top:7px;
-$fr3line3Top:19px;
-
-$fr4line1Top:12px;
-$fr4line2Top:12px;
-$fr4line3Top:12px;
 
 
 .fr-logo {
@@ -32,10 +25,14 @@ $fr4line3Top:12px;
   background-size: contain;
 }
 
+.wz-banner {
+  background-size:  350px 100px ;
+  background:  repeat-y url("jpv-bg2-320x50.jpg") 0 50px;
+}
 
 .coin-fall {
-  background-size:  320px 150px;
-  background: $acc1-color repeat-y url("jpv-bg-350x50.jpg") 0 0;
+  background-size:  320px 600px ;
+  background:  repeat-y url("jpv-coin-320x50.svg") 0 0;
   position: absolute;
   z-index: 0;
   top: 0;
@@ -46,16 +43,17 @@ $fr4line3Top:12px;
 
 
 
+
 .fr-f1 {
 
 
   &-lines {
+    width: 170px;
+    left: 50px;
     &-l1{
       z-index: 3;
       top: $fr1line1Top;
       margin: 0 0;
-      left: 85px;
-      right: auto;
     }
     &-l2{
       z-index: 4;
@@ -67,8 +65,6 @@ $fr4line3Top:12px;
       z-index: 5;
       top: $fr1line3Top;
       margin: 0 0;
-      left: 100px;
-      right: auto;
     }
   }
 
@@ -96,12 +92,12 @@ $fr4line3Top:12px;
 
   }
   &-bg {
-    background: #EDBC58 repeat-y url("jpv-bg2-350x50.jpg") top right;
+    background: #EDBC58 repeat-y url("jpv-bg2-320x50.jpg") top right;
     height: 100%;
     width: 100%;
     display: block;
     position: absolute;
-    background-size:  350px $banHeight ;
+    background-size:  320px 100px ;
     top: 0;
     left: 0;
   }
@@ -117,122 +113,33 @@ $fr4line3Top:12px;
     display: block;
   }
   &-lines {
+    width: 170px;
+    left: 63px;
     &-l1{
       top: $fr2line1Top;
       width: auto;
-      right: auto;
-      left: 80px;
+      left: -40px;
+
     }
     &-l2{
       padding: 5px 0;
-
       top: $fr2line2Top;
       width: auto;
-      right: auto;
-      left: 78px;
+
     }
     &-l3{
       top: $fr2line3Top;
       width: auto;
-      right: auto;
-      left: 70px;
+      left: 40px;
+
     }
   }
   &-terms{}
 }
-.fr-f3 {
-  &-lines {
-    &-l1{
-      top: $fr3line1Top;
-      width: auto;
-      right: auto;
-      left: 62px;
-    }
-    &-l2{
-      padding: 5px 0;
 
-      top: $fr3line2Top;
-      width: auto;
-      right: auto;
-      left: 95px;
-
-    }
-    &-l3{
-      top: $fr3line3Top;
-      width: auto;
-      right: auto;
-      left: 68px;
-    }
-  }
-  &-providers {
-
-    position: absolute;
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    transform: scale(0.9);
-    align-items: center;
-    .logo1, .logo2, .logo3 {
-      display: flex;
-    }
-    .logo1 {
-      background: no-repeat url("jpv-char-320x50.png") -148px -64px;
-      width: 124px;
-      height: 27px;
-      background-size: 355px 90px;
-
-    }
-    //playn go
-    .logo2 {
-      background: no-repeat url("jpv-char-320x50.png") -148px 0 ;
-      width: 88px;
-      height: 23px;
-      background-size: 355px 90px;
-
-    }
-    //netent
-    .logo3 {
-      background: no-repeat url("jpv-char-320x50.png") -272px 0 ;
-      width: 124px;
-      height: 45px;
-      background-size: 355px 90px;
-
-    }
-  }
-}
-.fr-f4 {
-  &-lines {
-    &-l1{
-      top: $fr4line1Top;
-      width: auto;
-      right: auto;
-      left: 88px;
-    }
-    &-l2{
-      padding: 5px 0;
-
-      top: $fr4line2Top;
-      width: auto;
-      right: auto;
-      left: 77px;
-    }
-    &-l3{
-      top: $fr4line3Top;
-      width: auto;
-      right: auto;
-      left: 65px;
-    }
-  }
-  &-terms{}
-}
 
 .cta-btn {
-  font-size: 14px;
+  font-size: 12px;
   max-width: 100px;
   border-radius: 50px;
   padding: 3px 0;
