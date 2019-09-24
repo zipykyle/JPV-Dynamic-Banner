@@ -4,26 +4,34 @@ $banHeight: 600px;
 
 $ctaPosBot: 30px;
 
-$fr1line1Top:180px;
-$fr1line2Top:240px;
+$fr1line1Top:120px;
+$fr1line2Top:190px;
 $fr1line3Top:340px;
 
-$fr2line1Top:115px;
-$fr2line2Top:150px;
-$fr2line3Top:250px;
+$fr2line1Top:100px;
+$fr2line2Top:155px;
+$fr2line3Top:255px;
 
-$fr3line1Top:115px;
-$fr3line2Top:185px;
-$fr3line3Top:250px;
-$fr3ProvidersTop:380px;
-
-$fr4line1Top:220px;
-$fr4line2Top:260px;
-$fr4line3Top:300px;
 
 .coin-fall {
 	background-size:  320px 600px ;
 	background: $acc1-color repeat-y url("jpv-bg-160x600.jpg") 0 0;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.wz-banner {
+	background-size:  320px 600px ;
+	background:  repeat-y url("jpv-bg-160x600.jpg") 0 0;
+}
+
+.coin-fall {
+	background-size:  160px 600px ;
+	background:  repeat-y url("jpv-coin-160x600.svg") 0 0;
 	position: absolute;
 	z-index: 0;
 	top: 0;
@@ -39,8 +47,6 @@ $fr4line3Top:300px;
 	&-bg {
 		display: block;
 		position: absolute;
-		//background-size:  320px 600px ;
-		//background: $acc1-color repeat-y url("jpv-bg-160x600.jpg") 0 0;
 		top: 0;
 		left: 0;
 		z-index: 0;
@@ -88,6 +94,7 @@ $fr4line3Top:300px;
 		}
 
 	}
+
 	&-bg {
 		background: #EDBC58 repeat-y url("jpv-bg-160x600.jpg") top right;
 		height: 100%;
@@ -121,69 +128,43 @@ $fr4line3Top:300px;
 			top: $fr2line3Top;
 		}
 	}
-	&-terms{}
-}
-.fr-f3 {
-	&-lines {
-		&-l1{
-			top: $fr3line1Top;
-		}
-		&-l2{
-			padding: 5px 0;
-
-			top: $fr3line2Top;
-		}
-		&-l3{
-			top: $fr3line3Top;
-		}
-	}
 	&-providers {
-		display: block;
 		position: absolute;
 		width: 100%;
-		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		bottom: 60px;
+		transform: scale(0.8);
 		.logo1, .logo2, .logo3 {
-			@extend %center;
+			display: flex;
 		}
 		.logo1 {
-			background: no-repeat url("jpv-char-160x600.png") 0 0;
+			background: no-repeat url("jpv-char-160x600.png")  0 0;
 			width: 160px;
-			height: 25px;
-			background-size: 160px 360px;
-			bottom: 135px;
+			height: 23px;
+			background-size: 160px 333px;
 		}
 		.logo2 {
-			background: no-repeat url("jpv-char-160x600.png") 0 -30px;
+			background: no-repeat url("jpv-char-160x600.png") 0 -27px;
 			width: 160px;
-			height: 28px;
+			height: 35px;
 			background-size: 160px 360px;
-			bottom: 100px;
+			margin: 4px 0;
+
 		}
 		.logo3 {
-			background: no-repeat url("jpv-char-160x600.png") 0 -58px;
+			background: no-repeat url("jpv-char-160x600.png") 0 -59px;
 			width: 160px;
-			height: 28px;
+			height: 44px;
 			background-size: 160px 360px;
-			bottom: 70px;
-		}
-	}
-}
-.fr-f4 {
-	&-lines {
-		&-l1{
-			top: $fr4line1Top;
-		}
-		&-l2{
-			padding: 5px 0;
 
-			top: $fr4line2Top;
-		}
-		&-l3{
-			top: $fr4line3Top;
 		}
 	}
 	&-terms{}
 }
+
 
 .cta-btn {
 	font-size: 18px;
