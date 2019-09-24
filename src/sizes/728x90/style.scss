@@ -5,37 +5,34 @@ $banHeight: 90px;
 $ctaPosBot: 30px;
 
 $fr1line1Top:5px;
-$fr1line2Top:58px;
-$fr1line3Top:58px;
+$fr1line2Top:32px;
+$fr1line3Top:68px;
 
-$fr2line1Top:25px;
-$fr2line2Top:23px;
-$fr2line3Top:27px;
+$fr2line1Top:5px;
+$fr2line2Top:35px;
+$fr2line3Top:65px;
 
-$fr3line1Top:18px;
-$fr3line2Top:8px;
-$fr3line3Top:25px;
-
-$fr4line1Top:25px;
-$fr4line2Top:25px;
-$fr4line3Top:25px;
 
 
 .fr-logo {
 	display: block;
-	width: 120px;
+	width: 100px;
 	position: absolute;
 	background: no-repeat url("~@images/jpv-logo.svg") center center;
-	height: 55px;
-	top: 15px;
-	left: 65px;
+	height: 65px;
+	top: 9px;
+	left: 10px;
 	background-size: contain;
 }
 
+.wz-banner {
+	background-size:  728px 180px ;
+	background:  repeat-y url("jpv-bg2-728x90.jpg") 0 90px;
+}
 
 .coin-fall {
 	background-size:  728px 90px ;
-	background: $acc1-color repeat-y url("jpv-bg-728x90.jpg") 0 0;
+	background:  repeat-y url("jpv-coin-728x90.svg") 0 0;
 	position: absolute;
 	z-index: 0;
 	top: 0;
@@ -44,15 +41,16 @@ $fr4line3Top:25px;
 	display: block;
 }
 
-
-
 .fr-f1 {
 
 
 	&-lines {
+		width: 480px;
+		left: 112px;
 		&-l1{
 			z-index: 3;
 			top: $fr1line1Top;
+			margin: 0 0;
 		}
 		&-l2{
 			z-index: 4;
@@ -62,12 +60,13 @@ $fr4line3Top:25px;
 		}
 		&-l3{
 			z-index: 5;
-			@extend %center;
 			top: $fr1line3Top;
+			margin: 0 0;
 		}
 	}
 
 }
+
 .fr-f2 {
 	&-slide {
 		height: 1500px;
@@ -96,7 +95,7 @@ $fr4line3Top:25px;
 		width: 100%;
 		display: block;
 		position: absolute;
-		background-size:  728px $banHeight ;
+		background-size:  728px 180px ;
 		top: 0;
 		left: 0;
 	}
@@ -112,100 +111,38 @@ $fr4line3Top:25px;
 		display: block;
 	}
 	&-lines {
+		width: 480px;
+		left: 97px;
 		&-l1{
 			top: $fr2line1Top;
+			left: -200px;
+
 		}
 		&-l2{
-			padding: 5px 0;
 
 			top: $fr2line2Top;
+			left: -100px;
+
 		}
 		&-l3{
 			top: $fr2line3Top;
+			left: 100px;
+
+
 		}
 	}
 	&-terms{}
 }
-.fr-f3 {
-	&-lines {
-		&-l1{
-			top: $fr3line1Top;
-		}
-		&-l2{
-			padding: 5px 0;
 
-			top: $fr3line2Top;
-
-		}
-		&-l3{
-			top: $fr3line3Top;
-		}
-	}
-	&-providers {
-
-		position: absolute;
-		width: 400px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		transform: scale(0.9);
-		align-items: center;
-		.logo1, .logo2, .logo3 {
-			display: flex;
-		}
-		.logo1 {
-			background: no-repeat url("jpv-char-728x90.png") -148px -64px;
-			width: 124px;
-			height: 27px;
-			background-size: 355px 90px;
-
-		}
-		//playn go
-		.logo2 {
-			background: no-repeat url("jpv-char-728x90.png") -148px 0 ;
-			width: 88px;
-			height: 23px;
-			background-size: 355px 90px;
-
-		}
-		//netent
-		.logo3 {
-			background: no-repeat url("jpv-char-728x90.png") -272px 0 ;
-			width: 124px;
-			height: 45px;
-			background-size: 355px 90px;
-
-		}
-	}
-}
-.fr-f4 {
-	&-lines {
-		&-l1{
-			top: $fr4line1Top;
-		}
-		&-l2{
-			padding: 5px 0;
-
-			top: $fr4line2Top;
-		}
-		&-l3{
-			top: $fr4line3Top;
-		}
-	}
-	&-terms{}
-}
 
 .cta-btn {
-	font-size: 20px;
+	font-size: 25px;
 	max-width: 160px;
 	border-radius: 50px;
-	padding: 5px 0;
-	bottom: 25px;
-	left: 535px;
+	padding: 3px 0;
+	bottom: 30px;
+	left: auto;
+	right: 5px;
 	position: absolute;
 	margin: 0 0 !important;
 }
@@ -216,17 +153,19 @@ $fr4line3Top:25px;
 		overflow: hidden;
 		&-terms{
 			display: block;
-			font-size: 10px;
+			font-size: 13px;
 			color: $acc3-color;
 			position: absolute;
-			bottom: 0;
+			bottom: 15px;
 			left: auto;
-			right: 38px;
+			right: 25px;
 			margin: 0 0;
 			align-items: center;
-			height: 20px;
-			width: 150px;
+			height: 15px;
+			width: 120px;
 			text-align: center;
+			text-shadow: black 0 0 10px ;
+			font-weight: 700;
 		}
 	}
 }

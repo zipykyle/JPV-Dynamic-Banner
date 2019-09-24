@@ -4,25 +4,25 @@ $banHeight: 600px;
 
 $ctaPosBot: 30px;
 
-$fr1line1Top:195px;
-$fr1line2Top:280px;
-$fr1line3Top:390px;
+$fr1line1Top:120px;
+$fr1line2Top:190px;
+$fr1line3Top:340px;
 
-$fr2line1Top:130px;
+$fr2line1Top:85px;
 $fr2line2Top:170px;
-$fr2line3Top:225px;
+$fr2line3Top:265px;
 
-$fr3line1Top:130px;
-$fr3line2Top:160px;
-$fr3line3Top:215px;
 
-$fr4line1Top:220px;
-$fr4line2Top:260px;
-$fr4line3Top:300px;
+
+
+.wz-banner {
+	background-size:  320px 600px ;
+	background:  repeat-y url("jpv-bg-300x600.jpg") 0 0;
+}
 
 .coin-fall {
-	background-size:  600px 600px ;
-	background: $acc1-color repeat-y url("jpv-bg-300x600.jpg") 0 0;
+	background-size:  160px 600px ;
+	background:  repeat-y url("jpv-coin-300x600.svg") 0 0;
 	position: absolute;
 	z-index: 0;
 	top: 0;
@@ -38,8 +38,6 @@ $fr4line3Top:300px;
 	&-bg {
 		display: block;
 		position: absolute;
-		//background-size:  600px 600px ;
-		//background: $acc1-color repeat-y url("jpv-bg-300x600.jpg") 0 0;
 		top: 0;
 		left: 0;
 		z-index: 0;
@@ -65,6 +63,7 @@ $fr4line3Top:300px;
 	}
 
 }
+
 .fr-f2 {
 	&-slide {
 		height: 1200px;
@@ -87,6 +86,7 @@ $fr4line3Top:300px;
 		}
 
 	}
+
 	&-bg {
 		background: #EDBC58 repeat-y url("jpv-bg-300x600.jpg") top right;
 		height: 100%;
@@ -100,14 +100,15 @@ $fr4line3Top:300px;
 	&-toon {
 		background: no-repeat url("jpv-char-300x600.png") bottom center;
 		background-size: cover;
-		width: 160px;
-		height: 276px;
+		width: 137px;
+		height: 236px;
 		position: absolute;
 		left: 0;
-		right:0 ;
+		right: 0;
 		margin: 0 auto;
 		bottom: 0;
 		display: block;
+		transform: scale(1.2);
 	}
 	&-lines {
 		&-l1{
@@ -122,80 +123,65 @@ $fr4line3Top:300px;
 			top: $fr2line3Top;
 		}
 	}
-	&-terms{}
-}
-.fr-f3 {
-	&-lines {
-		&-l1{
-			top: $fr3line1Top;
-		}
-		&-l2{
-			padding: 5px 0;
-
-			top: $fr3line2Top;
-		}
-		&-l3{
-			top: $fr3line3Top;
-		}
-	}
 	&-providers {
-
 		position: absolute;
-		width: 100%;
+		width: 95%;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
-		bottom: 85px;
-		transform: scale(0.9);
+		justify-content: center;
+		align-items: center;
+		bottom: 80px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+
+
 		.logo1, .logo2, .logo3 {
 			display: flex;
 		}
 		.logo1 {
-			background: no-repeat url("jpv-char-300x600.png") 0 0;
-			width: 85px;
-			height: 25px;
-			background-size: 167px 395px;
-
+			background: no-repeat url("jpv-char-300x600.png")  0 0;
+			width: 151px;
+			height: 38px;
+			background-size: 160px 333px;
 		}
 		.logo2 {
-			background: no-repeat url("jpv-char-300x600.png") -2px -82px;
-			width: 89px;
-			height: 25px;
-
-
-			background-size: 167px 395px;
+			background: no-repeat url("jpv-char-300x600.png") 0 -42px;
+			width: 216px;
+			height: 24px;
+			background-size: 160px 360px;
+			margin: 4px 0;
 
 		}
 		.logo3 {
-			background: no-repeat url("jpv-char-300x600.png") 0 -43px;
-			width: 120px;
-			height: 32px;
-			background-size: 167px 395px;
+			background: no-repeat url("jpv-char-300x600.png") 0 -73px;
+			width: 160px;
+			height: 25px;
+			background-size: 160px 360px;
 
-		}
-	}
-}
-.fr-f4 {
-	&-lines {
-		&-l1{
-			top: $fr4line1Top;
-		}
-		&-l2{
-			padding: 5px 0;
-
-			top: $fr4line2Top;
-		}
-		&-l3{
-			top: $fr4line3Top;
 		}
 	}
 	&-terms{}
 }
 
+
 .cta-btn {
 	font-size: 25px;
-	max-width: 220px;
+	max-width: 180px;
 	border-radius: 50px;
 	padding: 5px 0;
 	bottom: $ctaPosBot;
+}
+
+.fr-logo {
+	display: block;
+	width: 160px;
+	position: absolute;
+	background: no-repeat url("~@images/jpv-logo.svg") center center;
+	height: 70px;
+	top: 9px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-size: contain;
 }

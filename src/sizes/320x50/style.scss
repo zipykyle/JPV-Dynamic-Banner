@@ -170,3 +170,17 @@ $fr2line3Top:35px;
     }
   }
 }
+
+.replay-btn {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  height: 16px;
+  width: 16px;
+  z-index: 55;
+  cursor: pointer;
+  &:hover img {
+    -webkit-animation: rotate-animation 1s infinite linear;
+    animation: rotate-animation 1s infinite linear;
+  }
+}
