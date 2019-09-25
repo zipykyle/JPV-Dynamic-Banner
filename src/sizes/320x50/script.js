@@ -123,9 +123,9 @@ var timeline = (function MasterTimeline() {
 				.from(fr02Cta, frSD, {opacity:1},  3.5)
 				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)},  3.6)
 				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)},  3.7)
-				.from(fr02Line3, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 3.8)
+				.from(fr02Line3, frSD, {opacity:0,x: -50, ease:Elastic.easeOut.config(2, 1)}, 3.8)
 
-				.to(fr02Line3, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 6.0)
+				.to(fr02Line3, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 6.0)
 				.to(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)},  6.2)
 				.to(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)},  6.4)
 				.to(fr02Cta, frSD, {opacity:1},  6.4)

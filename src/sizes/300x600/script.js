@@ -98,10 +98,10 @@ var timeline = (function MasterTimeline() {
 			tl
 				.from(fr01,0.0, {opacity:0,force3D:true}, 0.0)
 				.from(frlogo, frSD, {opacity:1, ease:Elastic.easeOut.config(2, 1)}, 0.0)
+				.from(fr01Cta, frSD, {scale: 0.1, opacity:0, ease:Elastic.easeOut.config(1, 0.3)}, 0.0)
 				.from(fr01Line1, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)},0.3)
 				.from(fr01Line2, frSD, {opacity:0, scale: 0.1, ease:Elastic.easeOut.config(2, 1)}, 0.6)
 				.from(fr01Line3, frSD, {opacity:0, y: 20, ease:Elastic.easeOut.config(2, 1)}, 1.2)
-				.from(fr01Cta, frSD, {scale: 0.1, opacity:0, ease:Elastic.easeOut.config(1, 0.3)}, 1.4)
 
 				.to(fr01Line2, frSD, {scale: 1.2, ease:Elastic.easeOut.config(2, 1)}, 1.6)
 				.to(fr01Line2, frSD, {scale: 1, ease:Elastic.easeOut.config(2, 1)}, 1.7)
@@ -122,9 +122,9 @@ var timeline = (function MasterTimeline() {
 				.from(fr02Cta, frSD, {opacity:1},  3.5)
 				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)},  3.6)
 				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)},  3.7)
-				.from(fr02Line3, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 3.8)
+				.from(fr02Line3, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 3.8)
 
-				.to(fr02Line3, frSD, {opacity:0, ease:Elastic.easeOut.config(2, 1)}, 6.0)
+				.to(fr02Line3, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 6.0)
 				.to(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)},  6.2)
 				.to(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)},  6.4)
 				.to(fr02Cta, frSD, {opacity:1},  6.4)
