@@ -5,12 +5,12 @@ $banHeight: 90px;
 $ctaPosBot: 30px;
 
 $fr1line1Top:10px;
-$fr1line2Top:35px;
-$fr1line3Top:68px;
+$fr1line2Top:30px;
+$fr1line3Top:63px;
 
 $fr2line1Top:10px;
-$fr2line2Top:32px;
-$fr2line3Top:65px;
+$fr2line2Top:38px;
+$fr2line3Top:62px;
 
 
 
@@ -48,7 +48,7 @@ $fr2line3Top:65px;
 
 
 	&-lines {
-		width: 220px;
+		width: 204px;
 		left: 112px;
 		&-l1{
 			z-index: 3;
@@ -129,7 +129,7 @@ $fr2line3Top:65px;
 		}
 		&-l3{
 			top: $fr2line3Top;
-			left: 20px;
+			left: 40px;
 
 
 		}

@@ -143,6 +143,7 @@ var timeline = (function MasterTimeline() {
 
 		// DEBUG:
 		// tl.play('frame2+=0'); // start playing at label:frame3
+		// tl.pause('frame1+=1.8'); // pause the timeline at label:frame3
 		// tl.pause('frame1+=4.8'); // pause the timeline at label:frame3
 		// tl.play('frame1=1.0'); // pause the timeline at label:frame3
 	}
