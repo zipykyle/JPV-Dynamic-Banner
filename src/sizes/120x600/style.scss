@@ -4,13 +4,15 @@ $banHeight: 600px;
 
 $ctaPosBot: 73px;
 
-$fr1line1Top:130px;
+$fr1line1Top:135px;
 $fr1line2Top:195px;
-$fr1line3Top:280px;
+$fr1line3Top:300px;
 
-$fr2line1Top:150px;
-$fr2line2Top:180px;
-$fr2line3Top:220px;
+$fr2line1Top:120px;
+$fr2line2Top:160px;
+$fr2line3Top:210px;
+
+$txtDeg: rotate(-45deg);
 
 
 .wz-banner {
@@ -49,17 +51,23 @@ $fr2line3Top:220px;
 		&-l1{
 			z-index: 3;
 			top: $fr1line1Top;
+			transform: $txtDeg;
+			left: -10px;
 		}
 		&-l2{
 			z-index: 4;
 			padding: 5px 0;
-
 			top: $fr1line2Top;
+			transform: $txtDeg;
+			left: -15px;
+			text-align: center;
 		}
 		&-l3{
 			z-index: 5;
 			@extend %center;
 			top: $fr1line3Top;
+			transform: $txtDeg;
+			left: -5px;
 		}
 	}
 
@@ -159,10 +167,10 @@ $fr2line3Top:220px;
 
 .cta-btn {
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 14px;
 	max-width: 110px;
 	border-radius: 50px;
-	padding: 5px 0;
+	padding: 5px 5px;
 	bottom: $ctaPosBot;
 }
 

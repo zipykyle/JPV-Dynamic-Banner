@@ -126,7 +126,6 @@ var timeline = (function MasterTimeline() {
 				.from(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)},  3.6)
 				.from(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)},  3.7)
 				.from(fr02Line3, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 3.8)
-
 				.to(fr02Line3, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)}, 6.0)
 				.to(fr02Line2, frSD, {opacity:0, x: 50, ease:Elastic.easeOut.config(2, 1)},  6.2)
 				.to(fr02Line1, frSD, {opacity:0, x: -50, ease:Elastic.easeOut.config(2, 1)},  6.4)
@@ -135,19 +134,16 @@ var timeline = (function MasterTimeline() {
 				.to(fr02Bg,frSD, {opacity:0}, 6.6)
 				.to(fr02Cube,frSD, {opacity:1, x:-850, transformOrigin:"50% 50%", ease:Power4.easeOut}, 6.6)
 				.to(fr02,frSD, {opacity:0,force3D:true}, 6.6);
-
-
 			return tl;
-
 		}
-
 
 		tl.add(sceneOne(), 'frame1=0.0');
 
 		// DEBUG:
-		// tl.play('frame2+=0'); // start playing at label:frame3
-		// tl.pause('frame1+=4.8'); // pause the timeline at label:frame3
-		// tl.play('frame1=1.0'); // pause the timeline at label:frame3
+		// tl.play('frame2+=0');
+		// tl.pause('frame1+=1.8');
+		// tl.pause('frame1+=4.8');
+		// tl.play('frame1=1.0');
 	}
 
 	function updateStart() {
