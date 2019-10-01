@@ -5,11 +5,11 @@ $banHeight: 600px;
 $ctaPosBot: 55px;
 
 $fr1line1Top:150px;
-$fr1line2Top:220px;
+$fr1line2Top:225px;
 $fr1line3Top:320px;
 
 $fr2line1Top:120px;
-$fr2line2Top:160px;
+$fr2line2Top:170px;
 $fr2line3Top:220px;
 
 $txtDeg: rotate(-45deg);
@@ -47,11 +47,13 @@ $txtDeg: rotate(-45deg);
 		height: 600px;
 	}
 	&-lines {
+		overflow: hidden;
 		&-l1{
 			z-index: 3;
 			top: $fr1line1Top;
 			transform: $txtDeg;
-			left: -10px;
+			left: -19px;
+
 		}
 		&-l2{
 			z-index: 4;
@@ -65,7 +67,7 @@ $txtDeg: rotate(-45deg);
 			@extend %center;
 			top: $fr1line3Top;
 			transform: $txtDeg;
-			left: -10px;
+			left: -25px;
 		}
 	}
 

@@ -10,7 +10,7 @@ $fr1line3Top:300px;
 
 $fr2line1Top:120px;
 $fr2line2Top:160px;
-$fr2line3Top:210px;
+$fr2line3Top:200px;
 
 $txtDeg: rotate(-45deg);
 
@@ -67,7 +67,7 @@ $txtDeg: rotate(-45deg);
 			@extend %center;
 			top: $fr1line3Top;
 			transform: $txtDeg;
-			left: -5px;
+			left: -15px;
 		}
 	}
 
