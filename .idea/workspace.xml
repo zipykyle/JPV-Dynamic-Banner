@@ -3,18 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="06f9803f-2f88-47d3-b7d0-f8a5e2042b06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/120x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sizes/120x600/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/120x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/jpv-bg-468x90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/jpv-bg-728x90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/jpv-bg2-728x90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/jpv-char-728x90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/jpv-bg-728x90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
