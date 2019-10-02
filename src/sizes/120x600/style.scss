@@ -4,12 +4,12 @@ $banHeight: 600px;
 
 $ctaPosBot: 60px;
 
-$fr1line1Top:145px;
-$fr1line2Top:210px;
+$fr1line1Top:115px;
+$fr1line2Top:200px;
 $fr1line3Top:300px;
 
 $fr2line1Top:110px;
-$fr2line2Top:170px;
+$fr2line2Top:180px;
 $fr2line3Top:220px;
 
 $txtDeg: rotate(-45deg);
@@ -133,7 +133,7 @@ $txtDeg: rotate(-45deg);
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		bottom: 105px;
+		bottom: 85px;
 		transform: scale(0.8);
 		.logo1, .logo2, .logo3 {
 			display: flex;
