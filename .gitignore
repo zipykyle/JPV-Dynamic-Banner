@@ -4,3 +4,4 @@ zip/*.zip
 dist/landing/index.html
 .idea/workspace.xml
 .idea/*
+.idea*
