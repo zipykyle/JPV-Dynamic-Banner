@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06f9803f-2f88-47d3-b7d0-f8a5e2042b06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/120x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/120x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/120x600/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/160x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/160x600/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x250/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/300x600/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/300x600/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/320x50/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/320x50/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/468x90/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sizes/728x90/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sizes/728x90/index.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +93,11 @@
       <workItem from="1569495703148" duration="609000" />
       <workItem from="1569497165614" duration="692000" />
       <workItem from="1569498024692" duration="9000" />
-      <workItem from="1569920271357" duration="10812000" />
+      <workItem from="1569920271357" duration="11036000" />
+      <workItem from="1569938430766" duration="79000" />
+      <workItem from="1569938528014" duration="861000" />
+      <workItem from="1569939537415" duration="1704000" />
+      <workItem from="1570005542049" duration="579000" />
     </task>
     <servers />
   </component>
