@@ -4,9 +4,9 @@ $banHeight: 600px;
 
 $ctaPosBot: 73px;
 
-$fr1line1Top:135px;
-$fr1line2Top:195px;
-$fr1line3Top:300px;
+$fr1line1Top:115px;
+$fr1line2Top:200px;
+$fr1line3Top:320px;
 
 $fr2line1Top:120px;
 $fr2line2Top:160px;
@@ -51,23 +51,17 @@ $txtDeg: rotate(-45deg);
 		&-l1{
 			z-index: 3;
 			top: $fr1line1Top;
-			transform: $txtDeg;
-			left: -10px;
 		}
 		&-l2{
 			z-index: 4;
 			padding: 5px 0;
 			top: $fr1line2Top;
-			transform: $txtDeg;
-			left: -15px;
 			text-align: center;
 		}
 		&-l3{
 			z-index: 5;
 			@extend %center;
 			top: $fr1line3Top;
-			transform: $txtDeg;
-			left: -15px;
 		}
 	}
 
