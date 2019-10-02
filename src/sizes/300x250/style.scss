@@ -3,15 +3,15 @@
 $banWidth: 250px;
 $banHeight: 250px;
 
-$ctaPosBot: 35px;
+$ctaPosBot: 20px;
 
-$fr1line1Top:85px;
-$fr1line2Top:110px;
-$fr1line3Top:145px;
+$fr1line1Top:90px;
+$fr1line2Top:120px;
+$fr1line3Top:155px;
 
 $fr2line1Top:75px;
-$fr2line2Top:95px;
-$fr2line3Top:135px;
+$fr2line2Top:100px;
+$fr2line3Top:145px;
 
 
 
@@ -123,7 +123,7 @@ $fr2line3Top:135px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-		bottom: 65px;
+		bottom: 50px;
 		.logo1, .logo2, .logo3 {
 			display: flex;
 		}

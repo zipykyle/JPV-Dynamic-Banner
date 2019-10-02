@@ -2,15 +2,15 @@
 
 $banHeight: 600px;
 
-$ctaPosBot: 55px;
+$ctaPosBot: 40px;
 
-$fr1line1Top:150px;
-$fr1line2Top:220px;
-$fr1line3Top:320px;
+$fr1line1Top:120px;
+$fr1line2Top:195px;
+$fr1line3Top:280px;
 
 $fr2line1Top:120px;
-$fr2line2Top:160px;
-$fr2line3Top:220px;
+$fr2line2Top:185px;
+$fr2line3Top:240px;
 
 $txtDeg: rotate(-45deg);
 
@@ -50,22 +50,19 @@ $txtDeg: rotate(-45deg);
 		&-l1{
 			z-index: 3;
 			top: $fr1line1Top;
-			transform: $txtDeg;
-			left: -10px;
+
 		}
 		&-l2{
 			z-index: 4;
 			padding: 5px 0;
 			top: $fr1line2Top;
-			transform: $txtDeg;
-			left: -25px;
+
 		}
 		&-l3{
 			z-index: 5;
 			@extend %center;
 			top: $fr1line3Top;
-			transform: $txtDeg;
-			left: -10px;
+
 		}
 	}
 
@@ -165,7 +162,7 @@ $txtDeg: rotate(-45deg);
 
 
 .cta-btn {
-	font-size: 18px;
+	font-size: 17px;
 	max-width: 130px;
 	border-radius: 50px;
 	padding: 5px 10px;
