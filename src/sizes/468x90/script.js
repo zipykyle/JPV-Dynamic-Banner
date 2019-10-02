@@ -1,7 +1,7 @@
 require('@project/styles/global.scss');
 require('@468x90/style.scss');
 
-import { TweenLite, TimelineMax} from 'gsap';
+//import { TweenLite, TimelineMax} from 'gsap';
 
 
 
